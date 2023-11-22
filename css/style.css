@@ -52,6 +52,7 @@ ul {
     padding: 10px 55px;
 }
 
+
 .address-link {
     color: #FFF;
     font-family: "Gilroy", sans-serif;
@@ -270,7 +271,7 @@ ul {
     text-transform: uppercase;
     padding: 0px;
     margin: 0px;
-    padding-left: 50px;
+    
     
  }
  .energy{
@@ -302,6 +303,30 @@ ul {
     flex-direction: column;
     
  }
+ .o-nas-h1{
+    color: #FFF;
+    font-family: Gilroy;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 97%; /* 46.56px */
+    padding-left: 50px;
+    position: relative;
+    margin-top: 0px;
+    padding-left: 140px;
+    margin-top: -40px;
+    padding-bottom: 100px;
+ }
+ .o-nas-h1::before{
+        position: absolute;
+        content: "";
+        width: 1px;
+        height: 52px;
+        background-color: #FF7129;
+        left: 130px;
+
+        
+ }
  .article-o-nas{
     display: flex;
     justify-content: center;
@@ -310,8 +335,9 @@ ul {
  }
  .article-text{
     width: 534px;
+    padding-bottom: 180px;
  }
- .o-nas-h1{
+ .h1-support-page{
     margin: 10px;
     
     padding-bottom: 100px;
@@ -325,7 +351,21 @@ ul {
     color: #FFFFFF;
     position: relative;
  }
- .o-nas-h1::before{
+ .h1-instal{
+    margin: 10px;
+    color: #FFF;
+    font-family: Gilroy;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 97%;
+    color: #FFFFFF;
+    position: relative;
+    text-align: center;
+    top: 150px;
+    right: 140px;
+ }
+ .h1-support-page::before{
     position: absolute;
     content: "";
     width: 1px;
@@ -335,9 +375,11 @@ ul {
  }
  .slider{
     display: flex;
+    max-width: 1600px;
     
 
  }
+
  .projekty{
     color: rgba(32, 36, 45, 1);
     font-family: Gilroy;
@@ -349,20 +391,7 @@ ul {
     margin-bottom: 30px;
     position: relative;
     bottom: 70px;
-    left: 100px;
- }
- .projekty{
-    color: rgba(32, 36, 45, 1);
-    font-family: Gilroy;
-    font-size: 48px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 97%; /* 46.56px */
-    margin: 0px;
-    margin-bottom: 30px;
-    position: relative;
-    bottom: 70px;
-    left: 217px;
+    padding-left: 217px;
  }
  .kontakt{
     color: rgba(32, 36, 45, 1);
@@ -375,7 +404,7 @@ ul {
     margin-bottom: 30px;
     position: relative;
     bottom: 70px;
-    left: 217px;
+    
  }
  .kontakt::before{
     position: absolute;
@@ -395,6 +424,7 @@ ul {
  }
  .projekty-main{
     max-height: 200px;
+    max-width: 1500px;
  }
 .kontakt-name{
     color: #7B7E85;
@@ -417,4 +447,239 @@ ul {
 .contact-map{
     display: flex;
 
+}
+.article-instal{
+    margin-left: 450px;
+    width: 700px;
+}
+.hero-instal{
+    max-width: 1600px;
+    height: 412px;
+    background-image:radial-gradient(179.69% 50% at 50% 50%, rgba(32, 36, 45, 0.00) 0%, #20242D 100%), 
+    url('../img/instal.png'); 
+    display: flex;
+    justify-content: space-between;
+
+}
+.unselectable-intal{
+    margin-bottom: 46px;
+    margin-left: -10px;
+    display: flex;
+
+}
+.img{
+    display: flex;
+    justify-content: space-between;
+}
+.foron-tech{
+    font-size: 96px;
+}
+.instalacja-span{
+    bottom: 10px;
+    font-size: 96px;
+    right: 50px;
+}
+.instal-down{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin-right: opx;
+}
+.q-div{
+    background-color: #F5F5F5;
+    max-width: 700px;
+    text-align: start;
+    margin-top: 25px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-left: 24px;
+    padding-right: 90px;
+    font-family: Gilroy;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+}
+.q{
+    width: 650px;
+}
+.strong{
+    color:  #20242D;
+    font-family: Gilroy;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px; /* 150% */
+}
+.list{
+    padding-left: 30px;
+}
+.li-instal{
+    list-style-image: url(../img/list.svg);
+    background-color:  #F2F2F2;
+    margin-top: 24px;
+    margin-bottom: 24px;
+    padding-left: 30px;
+}
+.podsumowując{
+    background-color:  #F2F2F2;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    padding-left: 24px;
+    margin-bottom: 120px;
+    margin-top: 66px;
+    
+}
+.h2-instal{
+    position: relative;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: normal;
+    padding-left: 16px;
+    margin-top: 64px;
+}
+.h2-podsumowując{
+    margin-top: 0;
+}
+.h2-instal::before{
+    position: absolute;
+    content: "";
+    width: 1px;
+    height: 42px;
+    background-color: #FF7129;
+    left: 0px;
+}
+.modal-oddzwon{
+    position: fixed;
+/* фиксированное положение */
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    /* цвет фона */
+    z-index: 1;
+    pointer-events: none;
+}
+.modal-oddzwon.shown{
+    position: fixed;
+    /* фиксированное положение */
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5);
+    /* цвет фона */
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+}
+.modal{
+    max-width: 800px;
+    width: 100%;
+    height: 516px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 30;
+    background-color: #FFF;;
+    position: relative;
+    box-shadow: 0px 4px 41px 0px rgba(0, 0, 0, 0.10);
+    padding-left: 58px;
+
+}
+
+.close-modal {
+    cursor: pointer; 
+    position: absolute; 
+    top: 20px; 
+    right: 60px;
+    z-index: 2;
+
+}
+
+
+   
+   
+
+.close-modal::before,
+.close-modal::after {
+	content: '';
+	position: absolute;
+	top: 10px;
+	display: block;
+	width: 24px;
+	height: 3px;
+	background: #000;
+}
+
+.close-modal::before {
+	transform: rotate(45deg);
+}
+
+.close-modal::after {
+	transform: rotate(-45deg);
+}
+
+
+.h2-modal{
+    position: relative;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: normal;
+    line-height: 97%;
+    margin-left: 16px;
+    margin-top: -45px;
+}
+
+.h2-modal::before{
+    position: absolute;
+    content: "";
+    width: 1px;
+    height: 52px;
+    background-color: #FF7129;
+    left: -16px;
+}
+.modal-text{
+    color: rgba(32, 36, 45, 1);
+    /* text/text 4 */
+    font-family: Gilroy;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    max-width:668px;
+
+}
+.label-oddzwon{
+    display: flex;
+    flex-direction: column;
+    max-width: 327px;
+    color: #7B7E85;
+}
+.imie-telefon{
+    display: flex;
+    gap: 30px;
+}
+.modal-oddzwon-form-input{
+    background-color: transparent;
+    border: 1px solid #E0E0E0;
+    width: 327px;
+    height:52px;
+    margin-bottom: 40px;
+    
+}
+.modal-oddzwon-form-input::placeholder{
+    color: #7B7E85;
+    padding-left: 24px;
+}
+.callback{
+    -webkit-text-stroke: 1px #20242D;
+    font-size: 95px;
+    opacity: 0.1;
+    margin-left: -25px;
+    padding-top: 28px;
 }

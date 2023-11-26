@@ -562,6 +562,7 @@ ul {
     /* цвет фона */
     z-index: 1;
     pointer-events: none;
+    height: 596px;
 }
 .modal-oddzwon.shown{
     position: fixed;
@@ -600,11 +601,93 @@ ul {
     z-index: 2;
 
 }
+.roczne-zuzycie{
+    color:  #7B7E85;
+    font-family: Gilroy;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+.green-slider{
+    display: block;
+    width: 100px;
+    height: 6px;
+    background: linear-gradient(to right,  #5CD35A 0%, #FF8D24 50%, #F01717 100.73%);
 
-
-   
-   
-
+    Colors
+    Hex
+    Linear gradient
+    Export
+    
+    Copy
+    Ctrl+C
+    Screenreader support for the board is currently disabled. To enable it via Accessibility settings, press Ctrl+/, type Accessibility Settings, and press Enter. To see available keyboard shortcuts, enter Ctrl+Shift+Question mark .
+     )
+    ;
+}
+.range{
+    position: relative;
+    
+    width: 467px;
+    appearance: none;
+    background:transparent;
+    border-radius: 50px;
+    border: 1px,solid #888;
+    
+    overflow: hidden;
+    outline: none;
+    z-index: 6;
+}   
+.range::-webkit-slider-thumb{
+    position: relative;
+    height: 18px;
+    width: 18px;
+    background: #FF7129;
+    appearance: none;
+    cursor: pointer;
+    border-radius: 50px;
+    border: 0;
+    z-index: 6;
+    box-shadow: 245px 10px 10px 225px #F2F2F2;
+    
+}
+.range::-moz-range-thumb{
+    position: relative;
+    height: 15px;
+    width: 25px;
+    background: #555;
+    appearance: none;
+    cursor: pointer;
+    border-radius: 50px;
+    
+    border: 0;
+    z-index: 6;
+}
+.range + .fill{
+    margin-top: -20px;
+    z-index: 5;
+    height: 6px;
+    width: 467px;
+    border-radius: 50px;
+    position: absolute;
+    background: linear-gradient(to right,  #5CD35A 0%, #FF8D24 50%, #F01717 100.73%);)
+}
+.list-modal{
+    display: flex;
+    flex-direction: column;
+    width:327px;
+}   
+.obliczyć-koszt-list{
+    display: flex;
+    gap: 30px;
+    margin-top: 32px;
+}
+.obliczyć{
+   margin: 0 auto;
+   display: block;
+   margin-top: 56px;
+}
 .close-modal::before,
 .close-modal::after {
 	content: '';
@@ -682,4 +765,18 @@ ul {
     opacity: 0.1;
     margin-left: -25px;
     padding-top: 28px;
+}
+.modal-obliczyć-koszt{
+        position: fixed;
+    /* фиксированное положение */
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background: rgba(0, 0, 0, 0.5);
+        opacity: 1;
+        /* цвет фона */
+        z-index: 1;
+        
+        height: 596px;
 }

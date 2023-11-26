@@ -116,7 +116,7 @@
                          aby odpowiedzieć na Twoje pytania.
                     </p>
                 <div class="imie-telefon">
-                  <label for="Twoje imię" class="label-oddzwon"><span>Twoje imię</span>
+                  <label for="energii elektrycznej" class="label-oddzwon"><span>Roczne zużycie energii elektrycznej</span>
                     <input type="text" name="Twoje imię" id="Twoje imię" class="modal-oddzwon-form-input" placeholder="Wprowadź swoje imię"> 
                   </label>                       
                   <label for="Telefon" class="label-oddzwon"><span>Telefon</span>
@@ -127,21 +127,49 @@
                 </form> 
               </div> 
 
-              <div class="modal-oddzwon"> 
+              <div class="modal-obliczyć-koszt"> 
                 <form class="modal"> 
-                    <div class="close-modal"></div>
-                  <p class="unselectable callback">Callback</p>
-                  <h2 class="h2-modal">Obliczyć koszt</h2> 
-                    <p class="modal-text">Wprowadź swoje dane, aby obliczyć przybliżony 
-                        koszt paneli słonecznych.
-                    </p>
-                <div class="imie-telefon">
-                  <label for="Twoje imię" class="label-oddzwon"><span>Twoje imię</span>
-                    <input type="text" name="Twoje imię" id="Twoje imię" class="modal-oddzwon-form-input" placeholder="Wprowadź swoje imię"> 
-                  </label>                       
-                  <label for="Telefon" class="label-oddzwon"><span>Telefon</span>
-                    <input type="text" name="Telefon" id="Telefon" class="modal-oddzwon-form-input" placeholder="Wprowadź telefon"> 
-                  </label>   
+                        <div class="close-modal"></div>
+                    <p class="unselectable callback">Callback</p>
+                    <h2 class="h2-modal">Obliczyć koszt</h2> 
+                        <p class="modal-text">Wprowadź swoje dane, aby obliczyć przybliżony 
+                            koszt paneli słonecznych.
+                        </p>
+                    <div >
+                        <span class="roczne-zuzycie">Roczne zużycie energii elektrycznej</span>
+                        <div class="range">
+                            <input type="range" class="range" value="0" min="0" max="100">
+                            <div class="fill"></div>
+                        </div>
+                        <div class="obliczyć-koszt-list">
+                            <div class="list-modal">
+                                <label for="Strona świata" class="label-oddzwon1">
+                                    Strona świata
+                                </label>      
+                                    <input list="Strona świata" 
+                                    placeholder="Wybierz z listy" class="modal-oddzwon-form-input"> 
+                                    <datalist id="Strona świata">
+                                        <option>Południowy</option>
+                                        <option>Wschodni</option>
+                                        <option>Zachodni</option>
+                                    </datalist>
+                            </div>   
+                            <div class="list-modal">
+                                <label for="Materiał dachu" class="label-oddzwon1">
+                                    Materiał dachu
+                                </label>      
+                                    <input list="Materiał dachu"  
+                                    placeholder="Wybierz z listy" class="modal-oddzwon-form-input"> 
+                                    <datalist id="Materiał dachu">
+                                        <option>Dachówka</option>
+                                        <option>Łupek</option>
+                                        <option>Arkusz falisty</option>
+                                    </datalist>
+                            </div>  
+                        </div>    
+                        <button type="submit" class="action-button obliczyć">Obliczyć</button>      
+                </form>        
+                </div>   
                 </div>                  
                   <button type="submit" class="action-button">Zadzwoń</button> 
                 </form> 

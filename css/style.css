@@ -24,6 +24,13 @@ body {
     line-height: 24px;
     background-color: #fff;
     margin: 0;
+
+
+    background-image: url('../main.png');
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: 1600px 1989px;
+    opacity: 0.5; 
 }
 
 label,
@@ -41,15 +48,17 @@ ul {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-left: 55px;
+    padding-left: 0px;
     padding-right: 55px;
     padding-top: 12px;
-    padding-bottom: 12px;
+    padding-bottom: 6px;
 }
 
 .header-wrapper:first-child {
     background-color: #20242D;
-    padding: 10px 55px;
+    padding-left: 5px;
+    padding-top: 9px;
+    
 }
 
 
@@ -104,7 +113,7 @@ ul {
 }
 .address-list {
     display: flex;
-    gap: 55px;
+    gap: 33px;
 }
 
 .nav-list {
@@ -244,6 +253,14 @@ ul {
     color:#7B7E85 ;
  }
  .action-button{
+    width: 187px;
+    height: 49px;
+    background-color: #FF7129;
+    border: none;
+    color: #FFF;
+    margin: auto;
+ }
+ .action-button-koszt{
     width: 187px;
     height: 49px;
     background-color: #FF7129;
@@ -550,6 +567,9 @@ ul {
     background-color: #FF7129;
     left: 0px;
 }
+.koszt{
+
+}
 .modal-oddzwon{
     position: fixed;
 /* фиксированное положение */
@@ -601,6 +621,29 @@ ul {
     z-index: 2;
 
 }
+.close-modal::before,
+.close-modal::after {
+	content: '';
+	position: absolute;
+	top: 10px;
+	display: block;
+	width: 24px;
+	height: 3px;
+	background: #000;
+}
+
+.close-modal::before {
+	transform: rotate(45deg);
+}
+
+.close-modal::after {
+	transform: rotate(-45deg);
+}
+.x::after,.x::before{
+    background: #FFFFFF;
+}
+
+
 .roczne-zuzycie{
     color:  #7B7E85;
     font-family: Gilroy;
@@ -615,26 +658,14 @@ ul {
     height: 6px;
     background: linear-gradient(to right,  #5CD35A 0%, #FF8D24 50%, #F01717 100.73%);
 
-    Colors
-    Hex
-    Linear gradient
-    Export
-    
-    Copy
-    Ctrl+C
-    Screenreader support for the board is currently disabled. To enable it via Accessibility settings, press Ctrl+/, type Accessibility Settings, and press Enter. To see available keyboard shortcuts, enter Ctrl+Shift+Question mark .
-     )
-    ;
 }
 .range{
     position: relative;
-    
     width: 467px;
     appearance: none;
     background:transparent;
     border-radius: 50px;
     border: 1px,solid #888;
-    
     overflow: hidden;
     outline: none;
     z-index: 6;
@@ -671,7 +702,7 @@ ul {
     width: 467px;
     border-radius: 50px;
     position: absolute;
-    background: linear-gradient(to right,  #5CD35A 0%, #FF8D24 50%, #F01717 100.73%);)
+    background: linear-gradient(to right,  #5CD35A 0%, #FF8D24 50%, #F01717 100.73%);
 }
 .list-modal{
     display: flex;
@@ -683,28 +714,16 @@ ul {
     gap: 30px;
     margin-top: 32px;
 }
-.obliczyć{
+.action-button-obliczyć{
    margin: 0 auto;
    display: block;
    margin-top: 56px;
-}
-.close-modal::before,
-.close-modal::after {
-	content: '';
-	position: absolute;
-	top: 10px;
-	display: block;
-	width: 24px;
-	height: 3px;
-	background: #000;
-}
-
-.close-modal::before {
-	transform: rotate(45deg);
-}
-
-.close-modal::after {
-	transform: rotate(-45deg);
+   width: 187px;
+   height: 49px;
+   background-color: #FF7129;
+   border: none;
+   color: #FFF;
+   margin: auto;
 }
 
 
@@ -774,9 +793,82 @@ ul {
         bottom: 0;
         left: 0;
         background: rgba(0, 0, 0, 0.5);
-        opacity: 1;
+        opacity: 0;
         /* цвет фона */
-        z-index: 1;
+        z-index: 0;
+        pointer-events: none;
         
-        height: 596px;
+}
+.modal-obliczyć-koszt.shown{
+        position: fixed;
+        /* фиксированное положение */
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background: rgba(0, 0, 0, 0.5);
+        /* цвет фона */
+        opacity: 1;
+        visibility: visible;
+        pointer-events: auto;
+}
+.modal-Dziękuję-za-twoją-prośbę{
+        position: fixed;
+    /* фиксированное положение */
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background: rgba(0, 0, 0, 0.5);
+        opacity: 0;
+        /* цвет фона */
+        z-index: 0;
+        pointer-events: none;
+       
+}
+    
+.modal-Dziękuję-za-twoją-prośbę.shown{
+        position: fixed;
+        /* фиксированное положение */
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background: rgba(0, 0, 0, 0.5);
+        /* цвет фона */
+        opacity: 1;
+        visibility: visible;
+        pointer-events: auto;
+}
+
+.Dziękuję-za-twoją-prośbę{
+    background-color: #FF7129;
+}
+.check_mark{
+    background-image: url('../img/chekup.svg'); 
+    background-repeat: no-repeat;
+    background-position: bottom;
+    height: 200px;
+    width: 111px;
+    margin-left: auto;
+    margin-right: auto;
+   
+    
+    
+}
+.white{
+    color:#F2F2F2;
+    padding-left: 100px;
+    padding-top: 50px;
+}
+.white-text{
+    color: #FFF;
+    text-align: center;
+    padding-left: 50px;
+}
+.ok{
+    background-color: #E0E0E0;
+    color: #FF7129;
+    margin: 0 auto;
+    display: block;
 }

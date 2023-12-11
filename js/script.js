@@ -31,12 +31,33 @@ orderButtonsKoszt.forEach((orderButton) =>{
     orderButton.addEventListener('click', onClickKoszt); 
 });
 
-orderButtonObliczyc.forEach((orderButton) =>{ 
-    orderButton.addEventListener('click', onClickDziękuję); 
-});
-
+orderButtonObliczyc.addEventListener('click', onClickDziękuję); 
 
 closeButton.addEventListener('click', onCloseClick); 
 
+
+const swiper = new Swiper('.swiper', {
+    // Optional parameters
+    direction: 'horizontal',
+    loop: true,
+  
+    // If we need pagination
+    pagination: {
+      el: '.swiper-pagination',
+    },
+  
+    // Navigation arrows
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  
+    // And if we need scrollbar
+    scrollbar: {
+      el: '.swiper-scrollbar',
+    },
+    mousewhell:true;
+    keyboard: true;
+  });
 
 

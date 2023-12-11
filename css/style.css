@@ -26,13 +26,38 @@ body {
     margin: 0;
 
 
-    background-image: url('../main.png');
+    /* background-image: url('../main.png');
     background-repeat: no-repeat;
     background-position: center top;
     background-size: 1600px 1989px;
-    opacity: 0.5; 
-}
+    opacity: 0.5;  */
 
+    /* background-image: url('../O nas.png');
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: 1600px 1080px;
+    opacity: 0.5; */
+
+    /* background-image: url('../Kontakty.png');
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: 1600px 1080px;
+    opacity: 0.5; */
+
+    /* background-image: url('../Instalacja.png');
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: 1600px 5529px;
+    opacity: 0.5; */
+
+
+
+
+}
+.main{
+    max-height: 1600px;
+    margin: 0 auto;
+}
 label,
 button {
     cursor: pointer;
@@ -48,15 +73,24 @@ ul {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-left: 0px;
-    padding-right: 55px;
-    padding-top: 12px;
-    padding-bottom: 6px;
+
+    max-width: 1600px;
+    margin: 0 auto;
+    
 }
+.header-wrapper-logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 17px;
+    max-width: 1600px;
+    margin: 0 auto;
+    padding-left: 7px;
+}
+
 
 .header-wrapper:first-child {
     background-color: #20242D;
-    padding-left: 5px;
     padding-top: 9px;
     
 }
@@ -65,20 +99,23 @@ ul {
 .address-link {
     color: #FFF;
     font-family: "Gilroy", sans-serif;
-    font-size: 12px;
+    font-size: 16px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
     text-decoration: none;
+    margin-left: 29px;
 }
 .black{
     color: #20242D;
+    text-decoration: dotted;
 }
 .address-link.mail{
     position: relative;
 }
 .address-link.phone{
     position: relative;
+    font-weight: 900;
 }
 .address-link.address{
     position: relative;
@@ -90,7 +127,7 @@ ul {
     height: 14px;
     width: 14px;
     top:0px;
-    left: -20px;
+    left: -25px;
 
 }   
 .address-link.phone::before{
@@ -100,7 +137,7 @@ ul {
     height: 14px;
     width: 14px;
     top:0px;
-    left: -20px;
+    left: -25px;
 }
 .address-link.address::before{
     position: absolute; 
@@ -109,16 +146,21 @@ ul {
     height: 14px;
     width: 14px;
     top:0px;
-    left: -20px;
+    left: -25px;
 }
 .address-list {
     display: flex;
-    gap: 33px;
+    gap: 73px;
+    padding-right: 7px;
 }
 
 .nav-list {
     display: flex;
     gap: 56px;
+    padding-right: 8px;
+    margin-bottom: 5px;
+    padding-bottom: 5px;
+    
 }
 
 .nav-link {
@@ -161,10 +203,15 @@ ul {
     background-color: rgba(32, 36, 45, 0.30);
     background-image: radial-gradient(179.69% 50% at 50% 50%, rgba(32, 36, 45, 0.00) 0%, #20242D 100%), 
                     url('../img/index-hero.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
     display: flex;
     flex-direction: column;
-    padding-top: 167px;
+    padding-top: 269px;
     padding-bottom: 290px;
+    margin: 0 auto;
+    align-items: center;
+    
 }
 
 .main-title {
@@ -175,45 +222,82 @@ ul {
     line-height: normal;
     margin: 0;
 }
-
+.Ty-i-twói-dom{
+    color: rgba(32, 36, 45, 1);
+    font-family: Gilroy;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 97%; /* 46.56px */
+    margin: 0px;
+    margin-bottom: 30px;
+    position: relative;
+    margin-top: 70px;
+    margin-bottom: 64px;
+    margin-left: 19px;
+    position: relative;
+}
+.Ty-i-twói-dom::before{
+    position: absolute;
+    content: "";
+    width: 1px;
+    height: 52px;
+    background-color: #FF7129;
+    left: -19px;
+}
 .main-text {
     width: 500px;
     margin: 0 auto;
     color: #FFF;
     text-align: center;
     font-size: 16px;
-
     line-height: 24px;
+    padding-top: 15px;
 }
 .article{
     display: flex;
     justify-content: center;
-    margin-top: 132px;
+    padding-top: 130px;
     margin-bottom:115px;
 }
+
 .article-text{
     max-width: 535px;
-    height: 216px;
-    margin-left: 80px;
+    gap: 20px;
 
+}
+.p-index{
+    margin-top: 24px;
 }
 .footer{
     max-width: 1600px;
     height: 207px;
     background-color: #20242D;
+    max-width: 1600px;
+    margin: 0 auto;
 }
 .bottom-menu{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     padding-top: 50px;
+    padding-left: 5px;
+    padding-right: 6px;
 
 }
 .nav-bottom{
     display: flex;
-    gap:58px;
+    gap:56px;
+    color: #FFF;
+    font-family: Gilroy;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-top: 16px;
 }
 .logo-bottom{
     padding-right: 50px;
+    margin-top: 9px;
 }
 .Strana-glowna{
     color:#FF7129;
@@ -223,6 +307,10 @@ ul {
     color:#FFF;
     text-decoration: none;
     padding-top:16px;
+}
+.link-bottom:hover{
+    color:#FF7129;
+    text-decoration: none;
 }
 .button-bottom{
     width: 187px;
@@ -236,16 +324,19 @@ ul {
     justify-content: space-between; 
     margin-top: 50px;
     padding-bottom: 24px;
-    padding-left: 50px;
-    padding-right: 50px;
+    padding-left: 10px;
+    padding-right: 10px;
     position: relative;
+    font-size: 12px;
  }
  .last-link::after{
-    width: 91%;
+    width: 99%;
     height: 1px;
     background-color: #7B7E85;
     position: absolute;
     content: '';
+    left: 6px;
+    bottom: 70px;
 
 
  }
@@ -256,9 +347,9 @@ ul {
     width: 187px;
     height: 49px;
     background-color: #FF7129;
-    border: none;
+    border: 1px solid #FF7129;
     color: #FFF;
-    margin: auto;
+    background-color: rgba(28,28,28,0);
  }
  .action-button-koszt{
     width: 187px;
@@ -267,28 +358,62 @@ ul {
     border: none;
     color: #FFF;
     margin: auto;
+    margin-top: 60px;
  }
- .unselectable{
-    -webkit-touch-callout: none; /* iOS Safari */
-    -webkit-user-select: none;   /* Chrome/Safari/Opera */
-    -khtml-user-select: none;    /* Konqueror */
-    -moz-user-select: none;      /* Firefox */
-    -ms-user-select: none;       /* Internet Explorer/Edge */
-    user-select: none; 
-    color: transparent;
-    -webkit-text-stroke: 1px rgba(255, 255, 255, 0.3);
-    
-    -webkit-background-clip: text;
-    background-clip: text; 
-    font-family: Gilroy;
-    font-size: 120px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    text-transform: uppercase;
-    padding: 0px;
-    margin: 0px;
-    
+ .hero-section::after{
+    position: absolute; 
+    content: 'Solar'; 
+    font-family: "Gilroy", sans-serif; 
+    font-size: 120px; 
+    font-style: normal; 
+    font-weight: 700; 
+    line-height: normal; 
+    text-transform: uppercase; 
+    opacity: 0.3; 
+    color: transparent; 
+    -webkit-text-stroke-width: 1px; 
+    -webkit-text-stroke-color: rgba(48,48,48); 
+    bottom:110px;
+    left: 7px;
+ }
+ .hero-section::before{
+    position: absolute; 
+    content: 'Energy'; 
+    font-family: "Gilroy", sans-serif; 
+    font-size: 120px; 
+    font-style: normal; 
+    font-weight: 700; 
+    line-height: normal; 
+    text-transform: uppercase; 
+    opacity: 0.3; 
+    color: transparent; 
+    -webkit-text-stroke-width: 1px; 
+    -webkit-text-stroke-color: rgba(48,48,48); 
+    right:10px;
+    top: 500px;
+ }
+ .mouse{
+    margin: 0 auto;
+    width: 40px;
+ }
+ .mouse-img{
+    position: absolute;
+    height: 20px;
+    width: 20px;
+
+ }
+ .mouse-img::after{
+    position: absolute; 
+    content: url('../img/mouse.svg');
+    width: 24px;
+    height: 24px;
+    top: 10px;
+    right: -15px;
+    border:11px solid #7B7E85;
+    background-color: #7B7E85;
+    border-radius: 50%;
+    left: 1px;
+    top: 105px;
     
  }
  .energy{
@@ -307,6 +432,7 @@ ul {
     -webkit-text-stroke: 1px rgba(32, 36, 45, 0.3);
     padding-top: 56px;
     padding-left: 173px;
+    position: relative;
 
  }
  .o-nas{
@@ -314,10 +440,12 @@ ul {
     url('../img/house.jfif');
     background-position: center;
     background-repeat: no-repeat;
-    max-height: 350px;
+    height: 351px;
+    max-width: 1600px;
     background-color: rgba(32, 36, 45, 0.30);
     display: flex;
     flex-direction: column;
+    margin: 0 auto;
     
  }
  .o-nas-h1{
@@ -327,32 +455,75 @@ ul {
     font-style: normal;
     font-weight: 700;
     line-height: 97%; /* 46.56px */
-    padding-left: 50px;
     position: relative;
-    margin-top: 0px;
-    padding-left: 140px;
-    margin-top: -40px;
+    margin-left: 173px;
     padding-bottom: 100px;
+    margin-top: 200px;
  }
  .o-nas-h1::before{
         position: absolute;
-        content: "";
-        width: 1px;
-        height: 52px;
-        background-color: #FF7129;
-        left: 130px;
-
-        
+        content: "About";
+        font-family: "Gilroy", sans-serif; 
+        font-size: 96px; 
+        font-style: normal; 
+        font-weight: 700; 
+        line-height: normal; 
+        text-transform: uppercase; 
+        opacity: 0.3; 
+        color: transparent; 
+        -webkit-text-stroke-width: 1px; 
+        -webkit-text-stroke-color: rgba(48,48,48); 
+        bottom:110px;
+        left: -47px;
  }
  .article-o-nas{
     display: flex;
-    justify-content: center;
-    margin-top: 80px;
-    
+    margin-top: 65px;
+    position: relative;
+    margin-left: 154px;
+    width: 1534px;
+    gap: 75px;
+ }
+ .article-o-nas::before{
+    position: absolute;
+    content: ;
  }
  .article-text{
-    width: 534px;
+    width: 524px;
     padding-bottom: 180px;
+    position: relative;
+ }
+ /* .article-text::after{
+    position: absolute; 
+    content: 'Info'; 
+    font-family: "Gilroy", sans-serif; 
+    font-size: 96px; 
+    font-style: normal; 
+    font-weight: 700; 
+    line-height: normal; 
+    text-transform: uppercase; 
+    opacity: 0.3; 
+    color: transparent; 
+    -webkit-text-stroke-width: 1px; 
+    -webkit-text-stroke-color: rgba(48,48,48); 
+    bottom:281px;
+    right: 345px;  
+} */
+
+.o-nas-bg{
+    background-image: url('../img/bg-article.png'); 
+    background-size: 435px 606px;
+    background-repeat: no-repeat;
+    background-position: -40px 98px;
+
+}
+.article-bg{
+    background-image:url('../img/bg-article.png'); 
+    background-size: 435px 606px;
+    background-repeat: no-repeat;
+    background-position: -40px 98px;
+
+}
  }
  .h1-support-page{
     margin: 10px;
@@ -369,18 +540,18 @@ ul {
     position: relative;
  }
  .h1-instal{
-    margin: 10px;
+    margin-top: 20px;
     color: #FFF;
     font-family: Gilroy;
-    font-size: 48px;
+    font-size: 72px;
     font-style: normal;
     font-weight: 700;
     line-height: 97%;
     color: #FFFFFF;
     position: relative;
-    text-align: center;
+    margin-left: 405px;
     top: 150px;
-    right: 140px;
+   
  }
  .h1-support-page::before{
     position: absolute;
@@ -417,10 +588,10 @@ ul {
     font-style: normal;
     font-weight: 700;
     line-height: 97%; /* 46.56px */
-    margin: 0px;
     margin-bottom: 30px;
     position: relative;
-    bottom: 70px;
+    margin-left: 171px;
+    margin-top: 125px;
     
  }
  .kontakt::before{
@@ -429,7 +600,7 @@ ul {
     width: 1px;
     height: 52px;
     background-color: #FF7129;
-    left: -10px;
+    left: -16px;
  }
  .projekty::before{
     position: absolute;
@@ -450,16 +621,21 @@ ul {
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+    margin-bottom: 0px;
 }
 .kontakt-list{
-    padding-left: 201px;
-    padding-top: 178px;
-    padding-bottom: 174px;
+    padding-left: 155px;
+    padding-top: 35px;
+    height:545px;
+}
+.li-style{
+    margin-top: 64px;
+    margin-right: 160px;
 }
 .li-style li{
     list-style-type: none;
-    margin: 50px 0;
-    width: 420px;
+    margin: 48px 0;
+    width: 450px;
 }
 .contact-map{
     display: flex;
@@ -468,16 +644,58 @@ ul {
 .article-instal{
     margin-left: 450px;
     width: 700px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+
 }
 .hero-instal{
     max-width: 1600px;
     height: 412px;
     background-image:radial-gradient(179.69% 50% at 50% 50%, rgba(32, 36, 45, 0.00) 0%, #20242D 100%), 
     url('../img/instal.png'); 
+    background-repeat: no-repeat;
+    background-position: center;
     display: flex;
     justify-content: space-between;
+    flex-direction: column;
+    margin: 0 auto;
+    position: relative;
+    margin-bottom: 70px;
 
 }
+.hero-instal::after{
+    position: absolute; 
+    content: 'Foton-tech'; 
+    font-family: "Gilroy", sans-serif; 
+    font-size: 96px; 
+    font-style: normal; 
+    font-weight: 700; 
+    line-height: normal; 
+    text-transform: uppercase; 
+    opacity: 0.3; 
+    color: transparent; 
+    -webkit-text-stroke-width: 1px; 
+    -webkit-text-stroke-color: #FFFFFF; 
+    left: -11px;
+}
+.hero-instal::before{
+    position: absolute; 
+    content: 'Instalacja'; 
+    font-family: "Gilroy", sans-serif; 
+    font-size: 96px; 
+    font-style: normal; 
+    font-weight: 700; 
+    line-height: normal; 
+    text-transform: uppercase; 
+    opacity: 0.3; 
+    color: transparent; 
+    -webkit-text-stroke-width: 1px; 
+    -webkit-text-stroke-color: #FFFFFF; 
+    right: -19px;
+    bottom: -21px;
+}
+
 .unselectable-intal{
     margin-bottom: 46px;
     margin-left: -10px;
@@ -508,8 +726,8 @@ ul {
     max-width: 700px;
     text-align: start;
     margin-top: 25px;
-    padding-top: 16px;
-    padding-bottom: 16px;
+    padding-top: 25px;
+    padding-bottom: 32px;
     padding-left: 24px;
     padding-right: 90px;
     font-family: Gilroy;
@@ -554,7 +772,8 @@ ul {
     font-weight: 700;
     line-height: normal;
     padding-left: 16px;
-    margin-top: 64px;
+    margin-top: 50px;
+    margin-bottom: 17px;
 }
 .h2-podsumowując{
     margin-top: 0;
@@ -872,3 +1091,38 @@ ul {
     margin: 0 auto;
     display: block;
 }
+.swiper {
+    width: 600px;
+    height: 300px;
+  }
+.swiper-slide{
+    text-align: center;
+    font-size: 18px;
+    background-color: #E0E0E0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contacts-text{
+    position: relative;
+}
+.contacts-text::after{
+    position: absolute; 
+    content: 'Contacts'; 
+    font-family: "Gilroy", sans-serif; 
+    font-size: 96px; 
+    font-style: normal; 
+    font-weight: 700; 
+    line-height: normal; 
+    text-transform: uppercase; 
+    opacity: 0.3; 
+    color: transparent; 
+    -webkit-text-stroke-width: 1px; 
+    -webkit-text-stroke-color: rgba(48,48,48); 
+    bottom:1px;
+    left: 128px;
+ }
+ .ul-list{
+    margin-right: 40px;
+    width: 400px;
+ }

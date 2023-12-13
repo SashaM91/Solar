@@ -234,7 +234,7 @@ ul {
     position: relative;
     margin-top: 70px;
     margin-bottom: 64px;
-    margin-left: 19px;
+    margin-left: 12px;
     position: relative;
 }
 .Ty-i-twói-dom::before{
@@ -351,6 +351,13 @@ ul {
     color: #FFF;
     background-color: rgba(28,28,28,0);
  }
+ .action-button-oddzwon{
+    width: 187px;
+    height: 49px;
+    background-color: #FF7129;
+    border: 1px solid #FF7129;
+    color: #FFF;
+ }
  .action-button-koszt{
     width: 187px;
     height: 49px;
@@ -372,8 +379,8 @@ ul {
     opacity: 0.3; 
     color: transparent; 
     -webkit-text-stroke-width: 1px; 
-    -webkit-text-stroke-color: rgba(48,48,48); 
-    bottom:110px;
+    -webkit-text-stroke-color: #FFFFFF; 
+    top:250px;
     left: 7px;
  }
  .hero-section::before{
@@ -388,7 +395,7 @@ ul {
     opacity: 0.3; 
     color: transparent; 
     -webkit-text-stroke-width: 1px; 
-    -webkit-text-stroke-color: rgba(48,48,48); 
+    -webkit-text-stroke-color: #FFFFFF; 
     right:10px;
     top: 500px;
  }
@@ -461,20 +468,28 @@ ul {
     margin-top: 200px;
  }
  .o-nas-h1::before{
-        position: absolute;
-        content: "About";
-        font-family: "Gilroy", sans-serif; 
-        font-size: 96px; 
-        font-style: normal; 
-        font-weight: 700; 
-        line-height: normal; 
-        text-transform: uppercase; 
-        opacity: 0.3; 
-        color: transparent; 
-        -webkit-text-stroke-width: 1px; 
-        -webkit-text-stroke-color: rgba(48,48,48); 
-        bottom:110px;
-        left: -47px;
+    position: absolute;
+    content: "About";
+    font-family: "Gilroy", sans-serif; 
+    font-size: 96px; 
+    font-style: normal; 
+    font-weight: 700; 
+    line-height: normal; 
+    text-transform: uppercase; 
+    opacity: 0.3; 
+    color: transparent; 
+    -webkit-text-stroke-width: 1px; 
+    -webkit-text-stroke-color: #FFF; 
+    bottom:100px;
+    left: -47px;
+ }
+ .o-nas-h1::after{
+    position: absolute;
+    content: "";
+    width: 1px;
+    height: 52px;
+    background-color: #FF7129;
+    left: -19px;
  }
  .article-o-nas{
     display: flex;
@@ -482,13 +497,19 @@ ul {
     position: relative;
     margin-left: 154px;
     width: 1534px;
-    gap: 75px;
+    gap: 10px;
  }
  .article-o-nas::before{
     position: absolute;
     content: ;
  }
  .article-text{
+    width: 524px;
+    padding-bottom: 180px;
+    position: relative;
+    padding-left: 70px;
+ }
+ .article-text-o-nas{
     width: 524px;
     padding-bottom: 180px;
     position: relative;
@@ -515,6 +536,10 @@ ul {
     background-size: 435px 606px;
     background-repeat: no-repeat;
     background-position: -40px 98px;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+
 
 }
 .article-bg{
@@ -564,10 +589,7 @@ ul {
  .slider{
     display: flex;
     max-width: 1600px;
-    
-
  }
-
  .projekty{
     color: rgba(32, 36, 45, 1);
     font-family: Gilroy;
@@ -577,9 +599,25 @@ ul {
     line-height: 97%; /* 46.56px */
     margin: 0px;
     margin-bottom: 30px;
+    margin-top: 20px;
     position: relative;
-    bottom: 70px;
     padding-left: 217px;
+ }
+ .projekty::before{
+    position: absolute; 
+    content: 'Gallery'; 
+    font-family: "Gilroy", sans-serif; 
+    font-size: 96px; 
+    font-style: normal; 
+    font-weight: 700; 
+    line-height: normal; 
+    text-transform: uppercase; 
+    opacity: 0.3; 
+    color: transparent; 
+    -webkit-text-stroke-width: 1px; 
+    -webkit-text-stroke-color: #20242D; 
+    top:-40px;
+    left: 190px;
  }
  .kontakt{
     color: rgba(32, 36, 45, 1);
@@ -602,13 +640,6 @@ ul {
     background-color: #FF7129;
     left: -16px;
  }
- .projekty::before{
-    position: absolute;
-    content: "";
-    width: 1px;
-    height: 52px;
-    background-color: #FF7129;
-    left: -10px;
  }
  .projekty-main{
     max-height: 200px;
@@ -763,7 +794,7 @@ ul {
     padding-bottom: 32px;
     padding-left: 24px;
     margin-bottom: 120px;
-    margin-top: 66px;
+    margin-top: 42px;
     
 }
 .h2-instal{
@@ -775,8 +806,20 @@ ul {
     margin-top: 50px;
     margin-bottom: 17px;
 }
+.h2-instal-konserwacja{
+    position: relative;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: normal;
+    padding-left: 16px;
+    margin-top: 70px;
+    margin-bottom: 17px;
+}
+
 .h2-podsumowując{
     margin-top: 0;
+    margin-top: 5px;
+    margin-bottom: 35px;
 }
 .h2-instal::before{
     position: absolute;
@@ -815,6 +858,7 @@ ul {
     opacity: 1;
     visibility: visible;
     pointer-events: auto;
+ 
 }
 .modal{
     max-width: 800px;
@@ -963,6 +1007,24 @@ ul {
     height: 52px;
     background-color: #FF7129;
     left: -16px;
+
+}
+.h2-modal::after{
+    position: absolute;
+    content: "Calculator";
+    font-family: "Gilroy", sans-serif; 
+    font-size: 96px; 
+    font-style: normal; 
+    font-weight: 700; 
+    line-height: normal; 
+    text-transform: uppercase; 
+    opacity: 0.3; 
+    color: transparent; 
+    -webkit-text-stroke-width: 1px; 
+    -webkit-text-stroke-color: #20242D;
+    right: 240px; 
+    bottom: -20px;
+}
 }
 .modal-text{
     color: rgba(32, 36, 45, 1);

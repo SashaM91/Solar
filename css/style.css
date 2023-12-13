@@ -1067,59 +1067,59 @@ ul {
     padding-top: 28px;
 }
 .modal-obliczyć-koszt{
-        position: fixed;
+    position: fixed;
     /* фиксированное положение */
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        background: rgba(0, 0, 0, 0.5);
-        opacity: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5);
+    opacity: 0;
         /* цвет фона */
-        z-index: 0;
-        pointer-events: none;
+    z-index: 0;
+    pointer-events: none;
         
 }
 .modal-obliczyć-koszt.shown{
-        position: fixed;
+    position: fixed;
         /* фиксированное положение */
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        background: rgba(0, 0, 0, 0.5);
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5);
         /* цвет фона */
-        opacity: 1;
-        visibility: visible;
-        pointer-events: auto;
+     opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
 }
 .modal-Dziękuję-za-twoją-prośbę{
-        position: fixed;
+    position: fixed;
     /* фиксированное положение */
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        background: rgba(0, 0, 0, 0.5);
-        opacity: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5);
+    opacity: 0;
         /* цвет фона */
-        z-index: 0;
-        pointer-events: none;
+    z-index: 0;
+    pointer-events: none;
        
 }
     
 .modal-Dziękuję-za-twoją-prośbę.shown{
-        position: fixed;
+    position: fixed;
         /* фиксированное положение */
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        background: rgba(0, 0, 0, 0.5);
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5);
         /* цвет фона */
-        opacity: 1;
-        visibility: visible;
-        pointer-events: auto;
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
 }
 
 .Dziękuję-za-twoją-prośbę{

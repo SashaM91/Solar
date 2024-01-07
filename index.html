@@ -112,14 +112,16 @@
                 <form class="modal"> 
                     <div class="close-modal"></div>
                   <h2 class="h2-modal">Oddzwoń</h2> 
-                    <p class="modal-text">Zostaw swoje dane, a nasz menedżer skontaktuje się z Tobą,
+                  <div class="div-modal-text">
+                    <p >Zostaw swoje dane, a nasz menedżer skontaktuje się z Tobą,
                          aby odpowiedzieć na Twoje pytania.
                     </p>
+                  </div> 
                 <div class="imie-telefon">
-                  <label for="energii elektrycznej" class="label-oddzwon"><span>Roczne zużycie energii elektrycznej</span>
+                  <label for="energii elektrycznej" class="label-oddzwon"><span class="label-oddzwon-span">Twoje imię</span>
                     <input type="text" name="Twoje imię" id="Twoje imię" class="modal-oddzwon-form-input" placeholder="Wprowadź swoje imię"> 
                   </label>                       
-                  <label for="Telefon" class="label-oddzwon"><span>Telefon</span>
+                  <label for="Telefon" class="label-oddzwon"><span  class="label-oddzwon-span">Telefon</span>
                     <input type="text" name="Telefon" id="Telefon" class="modal-oddzwon-form-input" placeholder="Wprowadź telefon"> 
                   </label>   
                 </div>                  
@@ -127,7 +129,7 @@
                 </form> 
             </div> 
 
-            <div class="modal-obliczyć-koszt"> 
+            <div class="modal-obliczyc-koszt"> 
                 <form class="modal"> 
                     <div class="close-modal"></div>
                     
@@ -141,21 +143,21 @@
                             <input type="range" class="range" value="0" min="0" max="100">
                             <div class="fill"></div>
                         </div>
-                        <div class="obliczyć-koszt-list">
+                        <div class="obliczyc-koszt-list">
                             <div class="list-modal">
-                                <label for="Strona świata" class="label-oddzwon1">
+                                <label for="Strona swiata" class="label-oddzwon1">
                                     Strona świata
                                 </label>      
-                                    <input list="Strona świata" 
+                                    <input list="Strona swiata" 
                                     placeholder="Wybierz z listy" class="modal-oddzwon-form-input"> 
                                     <datalist id="Strona świata">
-                                        <option>Południowy</option>
-                                        <option>Wschodni</option>
-                                        <option>Zachodni</option>
+                                        <list>Południowy</list>
+                                        <list>Wschodni</list>
+                                        <list>Zachodni</list>
                                     </datalist>
                             </div>   
                             <div class="list-modal">
-                                <label for="Materiał dachu" class="label-oddzwon1">
+                                <label for="Material dachu" class="label-oddzwon1">
                                     Materiał dachu
                                 </label>      
                                     <input list="Materiał dachu"  
@@ -166,13 +168,15 @@
                                         <option>Arkusz falisty</option>
                                     </datalist>
                             </div>  
-                        </div>    
-                        <button type="submit" class="action-button-obliczyć">Obliczyć</button>  
+                        </div>  
+                        <div class="margin-button">
+                        <button type="submit" class="obliczyc-koszt">Obliczyć</button>
+                        </div>  
                     </div>    
                 </form>  
             </div>      
-            <div class="modal-Dziękuję-za-twoją-prośbę "> 
-                <div class="modal Dziękuję-za-twoją-prośbę"> 
+            <div class="modal-Dziekuje-za-twoja-prosbe "> 
+                
                         <div class="close-modal x"></div>
                         <div class="check_mark">
                         </div>
@@ -182,7 +186,7 @@
                         </p>
                     
                         <button type="submit" class="action-button ok">OK</button>      
-                </div>  
+                
             </div>  
                 
             <script src="js/script.js"></script>

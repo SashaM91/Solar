@@ -60,7 +60,7 @@ body {
 
 }
 .main{
-    max-height: 1600px;
+    max-width: 1600px;
     margin: 0 auto;
 }
 label,
@@ -82,21 +82,24 @@ ul {
     margin: 0 auto;
     
 }
+.logo{
+    margin-left: 50px;
+}
 .header-wrapper-logo {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     padding-top: 17px;
     max-width: 1600px;
     margin: 0 auto;
     padding-left: 7px;
-    gap: 750px;
 }
 
 
 .header-wrapper:first-child {
     background-color: #20242D;
-    padding-top: 9px;
+    margin-top: 4px;
+    height: 34px;
     
 }
 
@@ -104,12 +107,12 @@ ul {
 .address-link {
     color: #FFF;
     font-family: "Gilroy", sans-serif;
-    font-size: 16px;
+    font-size: 12px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
     text-decoration: none;
-    margin-left: 29px;
+    margin-left: 50px;
 }
 .black{
     color: #20242D;
@@ -159,8 +162,8 @@ ul {
 }
 .address-list {
     display: flex;
-    gap: 73px;
-    padding-right: 7px;
+    gap: 25px;
+    margin-right: 50px;
 }
 
 .nav-list {
@@ -169,6 +172,7 @@ ul {
     padding-right: 8px;
     margin-bottom: 5px;
     padding-bottom: 5px;
+    margin-right: 50px;
     
 }
 
@@ -220,6 +224,7 @@ ul {
     padding-bottom: 290px;
     margin: 0 auto;
     align-items: center;
+    position:relative
     
 }
 
@@ -305,8 +310,9 @@ ul {
     margin-top: 16px;
 }
 .logo-bottom{
-    padding-right: 50px;
+    margin-left: 50px;
     margin-top: 9px;
+    margin-right: 55px;
 }
 .Strana-glowna{
     color:#FF7129;
@@ -332,9 +338,9 @@ ul {
     display: flex;
     justify-content: space-between; 
     margin-top: 50px;
-    padding-bottom: 24px;
-    padding-left: 10px;
-    padding-right: 10px;
+    margin-bottom: 24px;
+    margin-left: 50px;
+    margin-right: 50px;
     position: relative;
     font-size: 12px;
  }
@@ -359,6 +365,7 @@ ul {
     border: 1px solid #FF7129;
     color: #FFF;
     background-color: rgba(28,28,28,0);
+    margin-right: 50px;
  }
  .action-button-oddzwon{
     width: 187px;
@@ -400,8 +407,8 @@ ul {
     color: transparent; 
     -webkit-text-stroke-width: 1px; 
     -webkit-text-stroke-color: #FFFFFF; 
-    top:250px;
-    left: 7px;
+    top:160px;
+    left: 55px;
  }
  .hero-section::before{
     position: absolute; 
@@ -416,8 +423,8 @@ ul {
     color: transparent; 
     -webkit-text-stroke-width: 1px; 
     -webkit-text-stroke-color: #FFFFFF; 
-    right:10px;
-    top: 500px;
+    right:50px;
+    top: 410px;
  }
  .mouse{
     margin: 0 auto;

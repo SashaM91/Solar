@@ -84,7 +84,7 @@
 
                 <ul class="nav-bottom">
                     <li>
-                        <a href="index.html" class="link-bottom">Strona główna</a>
+                        <a href="index.html" class="link-bottom-current">Strona główna</a>
                     </li>
                     <li>
                         <a href="O-nas.html" class="link-bottom">O nas</a>
@@ -127,7 +127,7 @@
                     <input type="text" name="Telefon" id="Telefon" class="modal-oddzwon-form-input" placeholder="Wprowadź telefon"> 
                   </label>   
                 </div>                  
-                  <button type="submit" class="action-button-oddzwon">Zadzwoń</button> 
+                  <button type="button" class="action-button-oddzwon">Zadzwoń</button> 
                 </form> 
             </div> 
 
@@ -172,11 +172,51 @@
                             </div>  
                         </div>  
                         <div class="margin-button">
-                        <button type="submit" class="obliczyc-koszt">Obliczyć</button>
+                        <button type="button" class="obliczyc-koszt">Obliczyć</button>
                         </div>  
                     </div>    
                 </form>  
             </div>      
+            <div class="Przyblizony-koszt"> 
+                <form class="modal jakies-pytania"> 
+                    <div class="koszt">
+                        <div class="close-modal"></div>
+                        <div class="price-zl">
+                            <div>
+                                <p class="modal-text">Przybliżony koszt:</p>
+                                <h2 class="h2-modal-zl">40 000 zl</h2>
+                            </div>
+                            <button type="button"  class="action-button przeliczyc">Przeliczyć</button>
+                        </div>
+                    </div>
+                    <h2 class="h3-modal">Jakieś pytania?</h2> 
+                        <p class="modal-text black">Zostaw swoje dane, a nasz menedżer skontaktuje się z 
+                            Tobą, aby odpowiedzieć na Twoje pytania.
+                        </p>
+                    <div class="width-form">
+                        <div class="imie-telefon">
+                            <form class="form">
+                                <label for="energii elektrycznej" class="label-oddzwon"><span class="label-oddzwon-span">Twoje imię</span>
+                                <input type="text" name="Twoje imię" id="Twoje imię" class="modal-oddzwon-form-input" placeholder="Wprowadź swoje imię"> 
+                                </label>                       
+                                <label for="Telefon" class="label-oddzwon"><span  class="label-oddzwon-span">Telefon</span>
+                                <input type="text" name="Telefon" id="Telefon" class="modal-oddzwon-form-input" placeholder="Wprowadź telefon"> 
+                                </label>   
+                                <label for="e-mail" class="label-oddzwon"><span  class="label-oddzwon-span">E-mail</span>
+                                    <input type="text" name="E-mail" id="E-mail" class="modal-oddzwon-form-input" placeholder="Wprowadź e-mail"> 
+                                </label> 
+                            </form>                   
+                        </div>  
+                        <div class="margin-button">
+                            <button type="button" class="obliczyc-koszt">Wysłać prośbę</button>
+                        </div>  
+                    </div>    
+                </form>  
+            </div>      
+
+
+
+
             <div class="modal-Dziekuje-za-twoja-prosbe "> 
                 
                         <div class="close-modal x"></div>

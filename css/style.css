@@ -327,6 +327,10 @@ ul {
     color:#FF7129;
     text-decoration: none;
 }
+.link-bottom-current{
+    color:#FF7129;
+    text-decoration: none;
+}
 .button-bottom{
     width: 187px;
     height: 49px;
@@ -897,6 +901,14 @@ ul {
     padding-left: 58px;
 
 }
+.modal.jakies-pytania{
+    height: 717px;
+    padding-left: 0px;
+}
+.koszt{
+    height: 225px;
+    background-color:#FF7129;
+}
 
 .close-modal {
     cursor: pointer; 
@@ -1023,6 +1035,32 @@ ul {
     margin-bottom: 7px;
 }
 
+.price-zl{
+    display: flex;
+    padding-top: 52px;
+    
+}
+.przeliczyc{
+    background-color: #fff;
+    color: #FF7129;
+    display: block;
+    margin-top: 25px;
+    margin-right: 58px;
+    margin-left: auto;
+}
+
+.h2-modal-zl{
+    position: relative;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: normal;
+    line-height: 97%;
+    margin-left: 58px;
+    margin-bottom: 7px;
+    color: #FFF;
+    margin-top: 5px;
+}
+
 .h2-modal::before{
     position: absolute;
     content: "";
@@ -1045,7 +1083,7 @@ ul {
     color: transparent; 
     -webkit-text-stroke-width: 1px; 
     -webkit-text-stroke-color: #20242D;
-    right: 240px; 
+    right: 170px; 
     bottom: -20px;
 }
 .div-modal-text{
@@ -1070,7 +1108,9 @@ ul {
 .label-oddzwon-span{
     margin-bottom: 10px;
 }
-
+.width-form{
+    max-width: 400px;
+}
 .imie-telefon{
     display: flex;
     gap: 30px;
@@ -1080,7 +1120,11 @@ ul {
     font-style: normal;
     font-weight: 500;
     line-height: normal;
-
+    max-width: 300px;
+    
+}
+.form{
+    max-width: 500px;
 }
 .modal-oddzwon-form-input{
     background-color: transparent;
@@ -1088,6 +1132,7 @@ ul {
     width: 327px;
     height:52px;
     margin-bottom: 40px;
+    box-sizing: border-box;
     
 }
 .modal-oddzwon-form-input::placeholder{
@@ -1112,9 +1157,7 @@ ul {
     opacity: 0;
     /* цвет фона */
     z-index: 1;
-    pointer-events: none;
-    
-        
+    pointer-events: none;     
 }
 .modal-obliczyc-koszt.shown{
     position: fixed;
@@ -1128,6 +1171,20 @@ ul {
     opacity: 1;
     visibility: visible;
     pointer-events: auto;
+}
+.Przyblizony-koszt{
+    position: fixed;
+        /* фиксированное положение */
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5);
+        /* цвет фона */
+    opacity: 0;
+    visibility: visible;
+    pointer-events: none;
+
 }
 .modal-Dziekuje-za-twoja-prosbe{
     position: fixed;
@@ -1182,6 +1239,27 @@ ul {
     text-align: center;
     padding-left: 50px;
 }
+.modal-text{
+    color: #FFF;
+    font-family: Gilroy;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-left: 58px;  
+}
+.black{
+    color: #000;
+}
+
+.h3-modal{
+    color: #20242D;
+    font-family: Gilroy;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
 .ok{
     background-color: #E0E0E0;
     color: #FF7129;
@@ -1209,6 +1287,37 @@ ul {
     transition: all .3s eas
     
 }
+.swiper-button-prev:after {
+    position: absolute;
+    content: ''!important;
+    background-image: url('../img/arrow.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    border: 1px solid #B5885D;
+    right: -65px;
+    top: -12px;
+    background-color: #FF7129;
+}
+.swiper-button-next:after{
+    position: absolute;
+    content: ''!important;
+    background-image: url('../img/arrow-right.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    border: 1px solid #B5885D;
+    right: 5px;
+    top: -12px;
+    background-color: #FF7129;
+}
+
+
+
 /* .swiper-slide {
     max-width: 290px;
     height: auto;

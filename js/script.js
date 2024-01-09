@@ -16,6 +16,7 @@ const onClickKoszt = () => {
 
 }; 
 const onClickDziekuje = () => { 
+    modalElementKoszt.classList.remove('shown');
     modalDziekuje.classList.add('shown'); 
 
 }; 

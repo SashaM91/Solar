@@ -54,6 +54,11 @@ body {
     background-position: center top;
     background-size: 1600px 2207px;
     opacity: 0.5;  */
+    /* background-image: url('../Projecty.png');
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: 1600px 1192px;
+    opacity: 0.5;  */
 
 
 
@@ -674,6 +679,8 @@ ul {
  .projekty-main{
     max-height: 200px;
     max-width: 1500px;
+    margin-top: 120px;
+    margin-bottom: 67px;
  }
 .kontakt-name{
     color: #7B7E85;
@@ -1186,6 +1193,22 @@ ul {
     pointer-events: none;
 
 }
+.Przyblizony-koszt.shown{
+    position: fixed;
+        /* фиксированное положение */
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5);
+        /* цвет фона */
+    opacity: 1;
+    visibility: visible;
+    pointer-events: active;
+
+}
+
+
 .modal-Dziekuje-za-twoja-prosbe{
     position: fixed;
     /* фиксированное положение */
@@ -1268,15 +1291,16 @@ ul {
 }
 .swiper {
     width: 100%;
-    height: 300px;
+    height: 532px;
     margin: 0 auto;
     overflow: visible;
   }
 .swiper-slide{
     background-position: center; 
     background-size: cover;
-    width: 300px;
-    height: 300px;
+    background-color: lightgray;
+    width: 900px !important;
+    height: 532px;
     text-align: center;
     font-size: 18px;
     display: flex;
@@ -1284,9 +1308,18 @@ ul {
     align-items: center;
     margin: 0px;
     background: white;
-    transition: all .3s eas
+    transition: all .3s eas;
+    opacity: 0.5;
+    margin-right: 0px !important;
+    padding-right: 100px;
+    padding-left: 100px;
     
 }
+.swiper-slide-active{
+    opacity: 1;
+    width: 900px !important;
+}
+
 .swiper-button-prev:after {
     position: absolute;
     content: ''!important;
@@ -1297,7 +1330,7 @@ ul {
     height: 45px;
     border-radius: 50%;
     border: 1px solid #B5885D;
-    right: -65px;
+    left: 270px;
     top: -12px;
     background-color: #FF7129;
 }
@@ -1311,7 +1344,7 @@ ul {
     height: 45px;
     border-radius: 50%;
     border: 1px solid #B5885D;
-    right: 5px;
+    right: 270px;
     top: -12px;
     background-color: #FF7129;
 }
@@ -1325,7 +1358,8 @@ ul {
 } */
 .swiper-slide img {
     display: block;
-    max-width: 600px;
+    max-width: 1019px;
+    height: 500px;
   }
 .contacts-text{
     position: relative;

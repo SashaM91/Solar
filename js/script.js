@@ -8,6 +8,7 @@ const orderButtonObliczyc = document.querySelectorAll('.obliczyc-koszt');
 const modalDziekuje = document.querySelector('.modal-Dziekuje-za-twoja-prosbe');
 const modalPrzyblizonyKoszt = document.querySelector('.Przyblizony-koszt');
 const orderLinks = document.querySelectorAll('.nav-link');
+const orderWyslacProsbe = document.querySelectorAll('.obliczyc-koszt.zl40000');
 
 const onClick = () => { 
     modalElement.classList.add('shown'); 
@@ -17,7 +18,7 @@ const onClickKoszt = () => {
 
 }; 
 const onClickDziekuje = () => { 
-    modalElementKoszt.classList.remove('shown');
+    modalPrzyblizonyKoszt.classList.remove('shown');
     modalDziekuje.classList.add('shown'); 
 
 }; 
@@ -46,6 +47,10 @@ orderButtonObliczyc.forEach((orderButton) =>{
 });
 closeButton.forEach((orderButton) =>{ 
     orderButton.addEventListener('click', onCloseClick); 
+});
+
+orderWyslacProsbe.forEach((orderButton) =>{ 
+    orderButton.addEventListener('click', onClickDziekuje); 
 });
 
 

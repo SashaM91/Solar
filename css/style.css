@@ -49,21 +49,21 @@ body {
     background-position: center top;
     background-size: 1600px 5529px;
     opacity: 0.5; */
-    /* background-image: url('../Popups.png');
+    /* background-image: url('../popups.png');
     background-repeat: no-repeat;
     background-position: center top;
-    background-size: 1600px 2207px;
+    background-size: 1600px 4574px;
     opacity: 0.5;  */
     /* background-image: url('../Projecty.png');
     background-repeat: no-repeat;
     background-position: center top;
     background-size: 1600px 1192px;
     opacity: 0.5;  */
-
-
-
-
 }
+
+
+
+
 .main{
     max-width: 1600px;
     margin: 0 auto;
@@ -72,7 +72,6 @@ label,
 button {
     cursor: pointer;
 }
-
 ul {
     list-style: none;
     padding: 0;
@@ -393,6 +392,10 @@ ul {
     margin-top: 60px;
     display: block;
  }
+ .action-button-koszt:hover{
+    background: #D35E22;
+    box-shadow: 0px 4px 28px 0px rgba(255, 113, 41, 0.29);
+ }
  .obliczyc-koszt{
     width: 187px;
     height: 49px;
@@ -403,6 +406,11 @@ ul {
     margin-top: 60px;
     display: block;
  }
+ .obliczyc-koszt:hover{
+    background: #D35E22;
+    box-shadow: 0px 4px 28px 0px rgba(255, 113, 41, 0.29);
+ }
+
  .hero-section::after{
     position: absolute; 
     content: 'Solar'; 
@@ -745,7 +753,7 @@ ul {
     color: transparent; 
     -webkit-text-stroke-width: 1px; 
     -webkit-text-stroke-color: #FFFFFF; 
-    left: -11px;
+    left: 5px;
 }
 .hero-instal::before{
     position: absolute; 
@@ -930,7 +938,10 @@ ul {
     height: 225px;
     background-color:#FF7129;
 }
-
+.padding-putania{
+    padding-left: 58px;
+    padding-right: 58px;
+}
 .close-modal {
     cursor: pointer; 
     position: absolute; 
@@ -949,6 +960,18 @@ ul {
 	height: 3px;
 	background: #000;
 }
+.close-modal:hover::before,.close-modal:hover::after{
+    background-color: #D35E22;
+    
+}
+.close-modal.x::before,.close-modal.x::after{
+    background-color: #F2F2F2;
+}
+
+.close-modal.x:hover::before,.close-modal.x:hover::after{
+    background-color: #7a7e85;
+}
+
 
 .close-modal::before {
 	transform: rotate(45deg);
@@ -1068,6 +1091,14 @@ ul {
     margin-top: 25px;
     margin-right: 58px;
     margin-left: auto;
+    width: 187px;
+    height: 49px;
+    border: 1px solid #FF7129;
+    margin-right: 50px;
+}
+.przeliczyc:hover{
+    color: #FFF;
+    background-color: #20242D;
 }
 .yellow{
     padding-left: 0px !important;
@@ -1166,8 +1197,19 @@ ul {
     width: 327px;
     height:52px;
     margin-bottom: 40px;
-    box-sizing: border-box;
-    
+    box-sizing: border-box; 
+}
+.modal-oddzwon-form-input:hover{
+    border: 1px solid #FF7129 !important;
+}
+.modal-oddzwon-form-input:focus{
+    border: 1px solid #FF7129 !important;
+    outline: none;
+}
+.modal-oddzwon-form-input:invalid{
+    border: none !important;
+    outline: 2px solid red !important;
+    border-radius: 5px !important;
 }
 .modal-oddzwon-form-input::placeholder{
     color: #7B7E85;
@@ -1322,31 +1364,34 @@ ul {
     width: 100%;
     height: 532px;
     margin: 0 auto;
-    overflow: visible;
+    overflow: hidden;
+    margin-bottom: 153px;
   }
 .swiper-slide{
     background-position: center; 
     background-size: cover;
     background-color: lightgray;
-    width: 900px !important;
-    height: 532px;
-    text-align: center;
+    width: 1118px !important;
+    min-width: 1118px; 
+    max-width: 1118px; 
+    height: 494px;
+    /* text-align: center; */
     font-size: 18px;
     display: flex;
     justify-content: center;
-    align-items: center;
-    margin: 0px;
+    /* align-items: center; */
+    /* margin: 0px; */
     background: white;
     transition: all .3s eas;
     opacity: 0.5;
-    margin-right: 0px !important;
-    padding-right: 100px;
-    padding-left: 100px;
+    margin-right: 160px !important;
+    /* padding-right: 100px;
+    padding-left: 100px; */
     
 }
 .swiper-slide-active{
     opacity: 1;
-    width: 900px !important;
+    /* width: 900px !important; */
 }
 
 .swiper-button-prev:after {
@@ -1387,8 +1432,8 @@ ul {
 } */
 .swiper-slide img {
     display: block;
-    max-width: 1019px;
-    height: 500px;
+    width: 100%;
+    height: 100%;
   }
 .contacts-text{
     position: relative;

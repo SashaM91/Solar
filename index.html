@@ -74,6 +74,108 @@
                     </div>    
             </article>
             </section>
+
+            <div class="modal-obliczyc-koszt"> 
+                <form class="modal"> 
+                    <div class="close-modal"></div>
+                    
+                    <h2 class="h2-modal">Obliczyć koszt</h2> 
+                        <p class="modal-text">Wprowadź swoje dane, aby obliczyć przybliżony 
+                            koszt paneli słonecznych.
+                        </p>
+                    <div >
+                        <span class="roczne-zuzycie">Roczne zużycie energii elektrycznej</span>
+                        <div class="range">
+                            <input type="range" class="range" value="0" min="0" max="100">
+                            <div class="fill"></div>
+                        </div>
+                        <div class="obliczyc-koszt-list">
+                            <div class="list-modal">
+                                <label for="Strona swiata" class="label-oddzwon1">
+                                    Strona świata
+                                </label>      
+                                    <input list="Strona swiata" 
+                                    placeholder="Wybierz z listy" class="modal-oddzwon-form-input"> 
+                                    <datalist id="Strona świata">
+                                        <list>Południowy</list>
+                                        <list>Wschodni</list>
+                                        <list>Zachodni</list>
+                                    </datalist>
+                            </div>   
+                            <div class="list-modal">
+                                <label for="Material dachu" class="label-oddzwon1">
+                                    Materiał dachu
+                                </label>      
+                                    <input list="Materiał dachu"  
+                                    placeholder="Wybierz z listy" class="modal-oddzwon-form-input"> 
+                                    <datalist id="Materiał dachu">
+                                        <option>Dachówka</option>
+                                        <option>Łupek</option>
+                                        <option>Arkusz falisty</option>
+                                    </datalist>
+                            </div>  
+                        </div>  
+                        <div class="margin-button">
+                        <button type="button" class="obliczyc-koszt">Obliczyć</button>
+                        </div>  
+                    </div>    
+                </form>  
+            </div>      
+            <div class="Przyblizony-koszt"> 
+                <form class="modal jakies-pytania"> 
+                    <div class="koszt">
+                        <div class="close-modal x"></div>
+                        <div class="price-zl">
+                            <div>
+                                <p class="modal-text">Przybliżony koszt:</p>
+                                <h2 class="h2-modal-zl">40 000 zl</h2>
+                            </div>
+                            <button type="button"  class="przeliczyc">Przeliczyć</button>
+                        </div>
+                    </div>
+                    <div class="padding-putania">
+                        <h2 class="h3-modal">Jakieś pytania?</h2> 
+                            <p class="modal-text black">Zostaw swoje dane, a nasz menedżer skontaktuje się z 
+                                Tobą, aby odpowiedzieć na Twoje pytania.
+                            </p>
+                        <div class="width-form">
+                            <div class="imie-telefon">
+                                <form class="form">
+                                    <div>
+                                        <label for="energii elektrycznej" class="label-oddzwon"><span class="label-oddzwon-span">Twoje imię</span>
+                                        <input type="text" name="Twoje imię" id="Twoje imię" class="modal-oddzwon-form-input" placeholder="Wprowadź swoje imię"> 
+                                        </label>                       
+                                        <label for="Telefon" class="label-oddzwon"><span  class="label-oddzwon-span">Telefon</span>
+                                        <input type="text" name="Telefon" id="Telefon" class="modal-oddzwon-form-input" placeholder="Wprowadź telefon"> 
+                                        </label>
+                                    </div>   
+                                    <label for="e-mail" class="label-oddzwon"><span  class="label-oddzwon-span">E-mail</span>
+                                        <input type="text" name="E-mail" id="E-mail" class="modal-oddzwon-form-input" placeholder="Wprowadź e-mail"> 
+                                    </label> 
+                                </form>                   
+                            </div>  
+                            <div class="margin-button">
+                                <button type="button" class="obliczyc-koszt zl40000">Wysłać prośbę</button>
+                            </div>  
+                        </div>   
+                    </div>     
+                </form>  
+            </div>    
+            
+            <div class="modal-Dziekuje-za-twoja-prosbe">
+                <form class="modal Dziekuje-za-twoja-prosbe"> 
+                    <div class="close-modal x"></div>
+                    <div class="check_mark"> 
+                    </div>
+                    <h2 class="h2-modal-zl white yellow padding">Dziękuję za twoją prośbę</h2> 
+                        <p class="modal-text white-text yellow">Nasz menedżer wkrótce się z Tobą skontaktuje
+                        </p>
+                    <button type="submit" class="action-button ok przeliczyc">OK</button>   
+                </form> 
+            </div> 
+                  
+
+
         </main>
         
         <footer class="footer">
@@ -127,117 +229,18 @@
                     <input type="text" name="Telefon" id="Telefon" class="modal-oddzwon-form-input" placeholder="Wprowadź telefon"> 
                   </label>   
                 </div>                  
-                  <button type="button" class="action-button-oddzwon">Zadzwoń</button> 
+                  <button type="submit" class="action-button-oddzwon">Zadzwoń</button> 
                 </form> 
             </div> 
 
-            <div class="modal-obliczyc-koszt"> 
-                <form class="modal"> 
-                    <div class="close-modal"></div>
-                    
-                    <h2 class="h2-modal">Obliczyć koszt</h2> 
-                        <p class="modal-text">Wprowadź swoje dane, aby obliczyć przybliżony 
-                            koszt paneli słonecznych.
-                        </p>
-                    <div >
-                        <span class="roczne-zuzycie">Roczne zużycie energii elektrycznej</span>
-                        <div class="range">
-                            <input type="range" class="range" value="0" min="0" max="100">
-                            <div class="fill"></div>
-                        </div>
-                        <div class="obliczyc-koszt-list">
-                            <div class="list-modal">
-                                <label for="Strona swiata" class="label-oddzwon1">
-                                    Strona świata
-                                </label>      
-                                    <input list="Strona swiata" 
-                                    placeholder="Wybierz z listy" class="modal-oddzwon-form-input"> 
-                                    <datalist id="Strona świata">
-                                        <list>Południowy</list>
-                                        <list>Wschodni</list>
-                                        <list>Zachodni</list>
-                                    </datalist>
-                            </div>   
-                            <div class="list-modal">
-                                <label for="Material dachu" class="label-oddzwon1">
-                                    Materiał dachu
-                                </label>      
-                                    <input list="Materiał dachu"  
-                                    placeholder="Wybierz z listy" class="modal-oddzwon-form-input"> 
-                                    <datalist id="Materiał dachu">
-                                        <option>Dachówka</option>
-                                        <option>Łupek</option>
-                                        <option>Arkusz falisty</option>
-                                    </datalist>
-                            </div>  
-                        </div>  
-                        <div class="margin-button">
-                        <button type="button" class="obliczyc-koszt">Obliczyć</button>
-                        </div>  
-                    </div>    
-                </form>  
-            </div>      
-            <div class="Przyblizony-koszt"> 
-                <form class="modal jakies-pytania"> 
-                    <div class="koszt">
-                        <div class="close-modal"></div>
-                        <div class="price-zl">
-                            <div>
-                                <p class="modal-text">Przybliżony koszt:</p>
-                                <h2 class="h2-modal-zl">40 000 zl</h2>
-                            </div>
-                            <button type="button"  class="action-button przeliczyc">Przeliczyć</button>
-                        </div>
-                    </div>
-                    <h2 class="h3-modal">Jakieś pytania?</h2> 
-                        <p class="modal-text black">Zostaw swoje dane, a nasz menedżer skontaktuje się z 
-                            Tobą, aby odpowiedzieć na Twoje pytania.
-                        </p>
-                    <div class="width-form">
-                        <div class="imie-telefon">
-                            <form class="form">
-                                <div>
-                                    <label for="energii elektrycznej" class="label-oddzwon"><span class="label-oddzwon-span">Twoje imię</span>
-                                    <input type="text" name="Twoje imię" id="Twoje imię" class="modal-oddzwon-form-input" placeholder="Wprowadź swoje imię"> 
-                                    </label>                       
-                                    <label for="Telefon" class="label-oddzwon"><span  class="label-oddzwon-span">Telefon</span>
-                                    <input type="text" name="Telefon" id="Telefon" class="modal-oddzwon-form-input" placeholder="Wprowadź telefon"> 
-                                    </label>
-                                </div>   
-                                <label for="e-mail" class="label-oddzwon"><span  class="label-oddzwon-span">E-mail</span>
-                                    <input type="text" name="E-mail" id="E-mail" class="modal-oddzwon-form-input" placeholder="Wprowadź e-mail"> 
-                                </label> 
-                            </form>                   
-                        </div>  
-                        <div class="margin-button">
-                            <button type="button" class="obliczyc-koszt zl40000">Wysłać prośbę</button>
-                        </div>  
-                    </div>    
-                </form>  
-            </div>    
-            
-            <div class="modal-Dziekuje-za-twoja-prosbe">
-                <form class="modal Dziekuje-za-twoja-prosbe"> 
-                    <div class="close-modal x"></div>
-                    <div class="check_mark"> 
-                    </div>
-                    <h2 class="h2-modal-zl white yellow padding">Dziękuję za twoją prośbę</h2> 
-                        <p class="modal-text white-text yellow">Nasz menedżer wkrótce się z Tobą skontaktuje
-                        </p>
-                    <button type="submit" class="action-button ok">OK</button>   
-                </form> 
-            </div> 
-                
+           
             
                         
                         
                     
                         
                     
-                           
-                
-            </div>  
-                
+                    
             <script src="js/script.js"></script>
         </footer>
     </body>

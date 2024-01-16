@@ -213,7 +213,7 @@
 
                 <ul class="nav-bottom">
                     <li>
-                        <a href="index.html" class="Strana-glowna">Strona główna</a>
+                        <a href="index.html" class="link-bottom-current">Strona główna</a>
                     </li>
                     <li>
                         <a href="O-nas.html" class="link-bottom">O nas</a>
@@ -229,7 +229,7 @@
                     </li>
                 </ul>
 
-                <button type="button" class="button-bottom">Oddzwoń</button>
+                <button type="submit" class="action-button">Oddzwoń</button>
             </div>
             <div class="last-link">
                 <a href="#" class="link-bottom last" >
@@ -238,31 +238,28 @@
                 <a href="#" class="link-bottom last">
                     Ochrona danych osobowych
                 </a>
-               
             </div>
             <div class="modal-oddzwon"> 
                 <form class="modal"> 
                     <div class="close-modal"></div>
-                  <p class="unselectable callback">Callback</p>
                   <h2 class="h2-modal">Oddzwoń</h2> 
-                    <p class="modal-text">Zostaw swoje dane, a nasz menedżer skontaktuje się z Tobą,
+                  <div class="div-modal-text">
+                    <p >Zostaw swoje dane, a nasz menedżer skontaktuje się z Tobą,
                          aby odpowiedzieć na Twoje pytania.
                     </p>
+                  </div> 
                 <div class="imie-telefon">
-                  <label for="energii elektrycznej" class="label-oddzwon"><span>Roczne zużycie energii elektrycznej</span>
-                    <input type="text" name="Twoje imię" id="Twoje imię" class="zwon-form-input" placeholdemodal-oddr="Wprowadź swoje imię"> 
+                  <label for="energii elektrycznej" class="label-oddzwon"><span class="label-oddzwon-span">Twoje imię</span>
+                    <input type="text" name="Twoje imię" id="Twoje imię" class="modal-oddzwon-form-input" placeholder="Wprowadź swoje imię"> 
                   </label>                       
-                  <label for="Telefon" class="label-oddzwon"><span>Telefon</span>
+                  <label for="Telefon" class="label-oddzwon"><span  class="label-oddzwon-span">Telefon</span>
                     <input type="text" name="Telefon" id="Telefon" class="modal-oddzwon-form-input" placeholder="Wprowadź telefon"> 
                   </label>   
                 </div>                  
                   <button type="submit" class="action-button-oddzwon">Zadzwoń</button> 
                 </form> 
-            </div>
-              
-              <script src="js/script.js"></script>
+            </div> 
+            <script src="js/script.js"></script>
         </footer>
-
-        
     </body>
 </html>

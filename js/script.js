@@ -4,11 +4,13 @@ const formElement = document.querySelector('.modal');
 const orderButtons = document.querySelectorAll('.action-button');  
 const orderButtonsKoszt = document.querySelectorAll('.action-button-koszt')
 const closeButton = document.querySelectorAll('.close-modal');
+const closeButtonX = document.querySelectorAll('.close-modal.x');
 const orderButtonObliczyc = document.querySelectorAll('.obliczyc-koszt');
 const modalDziekuje = document.querySelector('.modal-Dziekuje-za-twoja-prosbe');
 const modalPrzyblizonyKoszt = document.querySelector('.Przyblizony-koszt');
 const orderLinks = document.querySelectorAll('.nav-link');
 const orderWyslacProsbe = document.querySelectorAll('.obliczyc-koszt.zl40000');
+const orderButtonsBlack = document.querySelectorAll('.przeliczyc');
 
 const onClick = () => { 
     modalElement.classList.add('shown'); 
@@ -24,8 +26,8 @@ const onClickDziekuje = () => {
 }; 
 
 const onClickPrzyblizonyKoszt = () =>{
-    modalPrzyblizonyKoszt.classList.add('shown');
     modalElementKoszt.classList.remove('shown');
+    modalPrzyblizonyKoszt.classList.add('shown');
 }
 
 const onCloseClick = () => { 
@@ -33,7 +35,15 @@ const onCloseClick = () => {
     modalElementKoszt.classList.remove('shown');
 }; 
 
+const onCloseClickX = () =>{
+    modalPrzyblizonyKoszt.classList.remove('shown');
+    modalDziekuje.classList.remove('shown'); 
+}
 
+const onPrzeliczycClick =() =>{
+    modalPrzyblizonyKoszt.classList.remove('shown');
+    modalElementKoszt.classList.add('shown'); 
+}
 orderButtons.forEach((orderButton) => { 
     orderButton.addEventListener('click', onClick); 
 }); 
@@ -53,7 +63,13 @@ orderWyslacProsbe.forEach((orderButton) =>{
     orderButton.addEventListener('click', onClickDziekuje); 
 });
 
+closeButtonX.forEach((orderButton) =>{ 
+    orderButton.addEventListener('click', onCloseClickX); 
+});
 
+orderButtonsBlack.forEach((orderButton) =>{
+    orderButton.addEventListener('click', onPrzeliczycClick)
+})
 
 
 
@@ -85,10 +101,10 @@ orderWyslacProsbe.forEach((orderButton) =>{
 //   });
 
 const swiper = new Swiper('.swiper', {
-    slidesPerView: 2,
+    slidesPerView: 1.3, 
     centeredSlides: true,
     loop: true,
-    spaceBetween: 400,
+    // spaceBetween: 400,
     pagination: {
           el: '.swiper-pagination',
           type:'fraction',

@@ -403,8 +403,11 @@ ul {
     border: none;
     color: #FFF;
     margin: auto;
-    margin-top: 60px;
+    margin-top: 10px;
     display: block;
+ }
+ .zostaw-text{
+    margin-left: 0px !important;
  }
  .obliczyc-koszt:hover{
     background: #D35E22;
@@ -943,48 +946,30 @@ ul {
     padding-right: 58px;
 }
 .close-modal {
-    cursor: pointer; 
-    position: absolute; 
-    top: 20px; 
-    right: 40px;
-    z-index: 2;
+  background: transparent;   
+  background-image: url('../img/close.svg'); 
+  background-repeat: no-repeat;
+  width: 32px;
+  height: 32px;
+  border: none;
+  margin-top: 16px;
+  margin-right: 5px;
+}
+.close-modal:hover{
+    background-image: url('../img/close-yellow.svg'); 
+}
+.close{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
 
 }
-.close-modal::before,
-.close-modal::after {
-	content: '';
-	position: absolute;
-	top: 10px;
-	display: block;
-	width: 24px;
-	height: 3px;
-	background: #000;
+.close-white{
+    background-image: url('../img/close-white.svg'); 
 }
-.close-modal:hover::before,.close-modal:hover::after{
-    background-color: #D35E22;
-    
+.close-white:hover{
+    background-image: url('../img/close-grey.svg'); 
 }
-.close-modal.x::before,.close-modal.x::after{
-    background-color: #F2F2F2;
-}
-
-.close-modal.x:hover::before,.close-modal.x:hover::after{
-    background-color: #7a7e85;
-}
-
-
-.close-modal::before {
-	transform: rotate(45deg);
-}
-
-.close-modal::after {
-	transform: rotate(-45deg);
-}
-.x::after,.x::before{
-    background: #FFFFFF;
-}
-
-
 .roczne-zuzycie{
     color:  #7B7E85;
     font-family: Gilroy;
@@ -1002,10 +987,10 @@ ul {
 }
 .range{
     position: relative;
-    width: 467px;
+    width: 678px;
     appearance: none;
     background:transparent;
-    border-radius: 50px;
+    border-radius: 10px;
     border: 1px,solid #888;
     overflow: hidden;
     outline: none;
@@ -1018,20 +1003,20 @@ ul {
     background: #FF7129;
     appearance: none;
     cursor: pointer;
-    border-radius: 50px;
+    border-radius: 10px;
     border: 0;
     z-index: 6;
-    box-shadow: 245px 10px 10px 225px #F2F2F2;
+    box-shadow: 345px 20px 20px 335px #F2F2F2;
     
 }
 .range::-moz-range-thumb{
     position: relative;
     height: 15px;
-    width: 25px;
+    width: 10px;
     background: #555;
     appearance: none;
     cursor: pointer;
-    border-radius: 50px;
+    border-radius: 10px;
     
     border: 0;
     z-index: 6;
@@ -1040,10 +1025,16 @@ ul {
     margin-top: -20px;
     z-index: 5;
     height: 6px;
-    width: 467px;
-    border-radius: 50px;
+    width: 678px;
+    border-radius: 10px;
     position: absolute;
     background: linear-gradient(to right,  #5CD35A 0%, #FF8D24 50%, #F01717 100.73%);
+}
+.text-before-range{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 24px;
+    max-width: 670px;
 }
 .list-modal{
     display: flex;
@@ -1075,13 +1066,12 @@ ul {
     line-height: normal;
     line-height: 97%;
     margin-left: 16px;
-    padding-top: 100px;
     margin-bottom: 7px;
 }
 
 .price-zl{
     display: flex;
-    padding-top: 52px;
+    padding-top: 22px;
     
 }
 .przeliczyc{
@@ -1184,7 +1174,7 @@ ul {
     
 }
 .zl40000{
-    margin-top: -100px;
+    margin-top: -89px;
     margin-right: 60px;
 }
 
@@ -1315,7 +1305,7 @@ ul {
     background-image: url('../img/chekup.svg'); 
     background-repeat: no-repeat;
     background-position: bottom;
-    height: 200px;
+    height: 140px;
     width: 111px;
     margin-left: auto;
     margin-right: auto;
@@ -1326,7 +1316,7 @@ ul {
 .white{
     color:#F2F2F2;
     padding-left: 100px;
-    padding-top: 50px;
+    padding-top: 30px;
 }
 .white-text{
     color: #FFF;
@@ -1353,11 +1343,21 @@ ul {
     font-style: normal;
     font-weight: 700;
     line-height: normal;
+    padding-left: 16px;
 }
+.h3-modal::before{
+    position: absolute;
+    content: "";
+    width: 1px;
+    height: 52px;
+    background-color: #FF7129;
+    left: 56px;
+ }
 .ok{
     background-color: #E0E0E0;
     color: #FF7129;
     margin: 0 auto;
+    margin-top:70px ;
     display: block;
 }
 .swiper {

@@ -1,77 +1,100 @@
 const modalElement = document.querySelector('.modal-oddzwon'); 
 const modalElementKoszt = document.querySelector('.modal-obliczyc-koszt'); 
 const formElement = document.querySelector('.modal');  
-const orderButtons = document.querySelectorAll('.action-button');  
-const orderButtonsKoszt = document.querySelectorAll('.action-button-koszt')
+const orderButtons = document.querySelector('.action-button');  
+const orderButtonsKoszt = document.querySelector('.action-button-koszt')
 const closeButton = document.querySelectorAll('.close-modal');
-const closeButtonX = document.querySelectorAll('.close-modal.x');
-const orderButtonObliczyc = document.querySelectorAll('.obliczyc-koszt');
+const closeButtonX = document.querySelectorAll('.close-modal.close-white');
+const orderButtonObliczyc = document.querySelector('.obliczyc-koszt');
 const modalDziekuje = document.querySelector('.modal-Dziekuje-za-twoja-prosbe');
 const modalPrzyblizonyKoszt = document.querySelector('.Przyblizony-koszt');
 const orderLinks = document.querySelectorAll('.nav-link');
-const orderWyslacProsbe = document.querySelectorAll('.obliczyc-koszt.zl40000');
-const orderButtonsBlack = document.querySelectorAll('.przeliczyc');
+const orderWyslacProsbe = document.querySelector('.obliczyc-koszt.zl40000');
+const orderButtonsBlack = document.querySelector('.przeliczyc');
 
-const onClick = () => { 
+const openFirstTab = () => { 
     modalElement.classList.add('shown'); 
 }; 
-const onClickKoszt = () => { 
-    modalElementKoszt.classList.add('shown'); 
-
+const openSecondTab = () => { 
+    modalPrzyblizonyKoszt.classList.remove('shown'); 
+    modalElementKoszt.classList.add('shown');
+    
 }; 
-const onClickDziekuje = () => { 
-    modalPrzyblizonyKoszt.classList.remove('shown');
-    modalDziekuje.classList.add('shown'); 
-
-}; 
-
-const onClickPrzyblizonyKoszt = () =>{
+const openThirdTab = () => { 
     modalElementKoszt.classList.remove('shown');
     modalPrzyblizonyKoszt.classList.add('shown');
+}; 
+
+const openFourthTab = () =>{
+    modalPrzyblizonyKoszt.classList.remove('shown');
+    modalDziekuje.classList.add('shown'); 
 }
+
+// const onClickPrzyblizonyKoszt = () =>{
+//     modalElementKoszt.classList.remove('shown');
+//     modalPrzyblizonyKoszt.classList.add('shown');
+// }
 
 const onCloseClick = () => { 
     modalElement.classList.remove('shown'); 
     modalElementKoszt.classList.remove('shown');
-}; 
-
-const onCloseClickX = () =>{
     modalPrzyblizonyKoszt.classList.remove('shown');
     modalDziekuje.classList.remove('shown'); 
-}
+}; 
 
-const onPrzeliczycClick =() =>{
-    modalPrzyblizonyKoszt.classList.remove('shown');
-    modalElementKoszt.classList.add('shown'); 
-}
-orderButtons.forEach((orderButton) => { 
-    orderButton.addEventListener('click', onClick); 
-}); 
- 
-orderButtonsKoszt.forEach((orderButton) =>{ 
-    orderButton.addEventListener('click', onClickKoszt); 
-});
+// const onCloseClickX = () =>{
+//     modalPrzyblizonyKoszt.classList.remove('shown');
+//     modalDziekuje.classList.remove('shown'); 
+// }
 
-orderButtonObliczyc.forEach((orderButton) =>{ 
-    orderButton.addEventListener('click', onClickPrzyblizonyKoszt); 
-});
+// const onPrzeliczycClick =() =>{
+//     modalPrzyblizonyKoszt.classList.remove('shown');
+//     modalElementKoszt.classList.add('shown'); 
+// }
+orderButtons.addEventListener('click', openFirstTab); 
+orderButtonsKoszt.addEventListener('click', openSecondTab); 
+orderButtonObliczyc.addEventListener('click', openThirdTab); 
+orderWyslacProsbe.addEventListener('click', openFourthTab); 
+orderButtonsBlack.addEventListener('click',openSecondTab);
+
+
+
+// orderButtonObliczyc.forEach((orderButton) =>{ 
+//     orderButton.addEventListener('click', onClickPrzyblizonyKoszt); 
+// });
+// closeButton.forEach((orderButton) =>{ 
+//     orderButton.addEventListener('click', onCloseClick); 
+// });
+
+// orderWyslacProsbe.forEach((orderButton) =>{ 
+//     orderButton.addEventListener('click', onClickDziekuje); 
+// });
+
 closeButton.forEach((orderButton) =>{ 
     orderButton.addEventListener('click', onCloseClick); 
 });
-
-orderWyslacProsbe.forEach((orderButton) =>{ 
-    orderButton.addEventListener('click', onClickDziekuje); 
-});
-
 closeButtonX.forEach((orderButton) =>{ 
-    orderButton.addEventListener('click', onCloseClickX); 
+    orderButton.addEventListener('click', onCloseClick); 
 });
 
-orderButtonsBlack.forEach((orderButton) =>{
-    orderButton.addEventListener('click', onPrzeliczycClick)
-})
+// orderButtonsBlack.forEach((orderButton) =>{
+//     orderButton.addEventListener('click', onPrzeliczycClick)
+// });
 
+// formElements.forEach((el) => { 
+//     el.addEventListener("click", (event) => { 
+//         e.stopPropagation(); 
+//     }) 
+// });
 
+window.addEventListener('keydown',(event)=>{
+    if(event.key ==='Escape'){
+        modalElement.classList.remove('shown');
+        modalElementKoszt.classList.remove('shown');
+        modalDziekuje.classList.remove('shown');
+        modalPrzyblizonyKoszt.classList.remove('shown');
+    }
+});
 
 
 

@@ -11,30 +11,25 @@ const modalPrzyblizonyKoszt = document.querySelector('.Przyblizony-koszt');
 const orderLinks = document.querySelectorAll('.nav-link');
 const orderWyslacProsbe = document.querySelector('.obliczyc-koszt.zl40000');
 const orderButtonsBlack = document.querySelector('.przeliczyc');
+const orderSwiper = document.querySelector('.swiper');
+const orderLastButton = document.querySelector('.action-button.ok.przeliczyc');
+const formElements = document.querySelectorAll('.modal');
 
 const openFirstTab = () => { 
     modalElement.classList.add('shown'); 
 }; 
 const openSecondTab = () => { 
     modalPrzyblizonyKoszt.classList.remove('shown'); 
-    modalElementKoszt.classList.add('shown');
-    
+    modalElementKoszt.classList.add('shown'); 
 }; 
 const openThirdTab = () => { 
     modalElementKoszt.classList.remove('shown');
     modalPrzyblizonyKoszt.classList.add('shown');
 }; 
-
 const openFourthTab = () =>{
     modalPrzyblizonyKoszt.classList.remove('shown');
     modalDziekuje.classList.add('shown'); 
 }
-
-// const onClickPrzyblizonyKoszt = () =>{
-//     modalElementKoszt.classList.remove('shown');
-//     modalPrzyblizonyKoszt.classList.add('shown');
-// }
-
 const onCloseClick = () => { 
     modalElement.classList.remove('shown'); 
     modalElementKoszt.classList.remove('shown');
@@ -42,6 +37,56 @@ const onCloseClick = () => {
     modalDziekuje.classList.remove('shown'); 
 }; 
 
+
+formElements.forEach((el) => { 
+    el.addEventListener("click", (e) => { 
+        e.stopPropagation(); 
+    }) 
+});
+
+
+
+
+
+orderButtons.addEventListener('click', openFirstTab); 
+if(orderButtonsKoszt){
+    orderButtonsKoszt.addEventListener('click', openSecondTab); 
+}
+if(orderButtonObliczyc){
+    orderButtonObliczyc.addEventListener('click', openThirdTab); 
+}
+if(orderWyslacProsbe){
+    orderWyslacProsbe.addEventListener('click', openFourthTab); 
+}
+if(orderButtonsBlack){
+    orderButtonsBlack.addEventListener('click',openSecondTab);
+}
+if(orderLastButton){
+    orderLastButton.addEventListener('click',onCloseClick)
+}
+
+
+closeButton.forEach((orderButton) =>{ 
+    orderButton.addEventListener('click', onCloseClick); 
+});
+closeButtonX.forEach((orderButton) =>{ 
+    orderButton.addEventListener('click', onCloseClick); 
+});
+
+window.addEventListener('keydown',(event)=>{
+    if(event.key ==='Escape'){
+        modalElement.classList.remove('shown');
+        modalElementKoszt.classList.remove('shown');
+        modalDziekuje.classList.remove('shown');
+        modalPrzyblizonyKoszt.classList.remove('shown');
+    }
+});
+
+
+// const onClickPrzyblizonyKoszt = () =>{
+//     modalElementKoszt.classList.remove('shown');
+//     modalPrzyblizonyKoszt.classList.add('shown');
+// }
 // const onCloseClickX = () =>{
 //     modalPrzyblizonyKoszt.classList.remove('shown');
 //     modalDziekuje.classList.remove('shown'); 
@@ -51,11 +96,6 @@ const onCloseClick = () => {
 //     modalPrzyblizonyKoszt.classList.remove('shown');
 //     modalElementKoszt.classList.add('shown'); 
 // }
-orderButtons.addEventListener('click', openFirstTab); 
-orderButtonsKoszt.addEventListener('click', openSecondTab); 
-orderButtonObliczyc.addEventListener('click', openThirdTab); 
-orderWyslacProsbe.addEventListener('click', openFourthTab); 
-orderButtonsBlack.addEventListener('click',openSecondTab);
 
 
 
@@ -70,12 +110,7 @@ orderButtonsBlack.addEventListener('click',openSecondTab);
 //     orderButton.addEventListener('click', onClickDziekuje); 
 // });
 
-closeButton.forEach((orderButton) =>{ 
-    orderButton.addEventListener('click', onCloseClick); 
-});
-closeButtonX.forEach((orderButton) =>{ 
-    orderButton.addEventListener('click', onCloseClick); 
-});
+
 
 // orderButtonsBlack.forEach((orderButton) =>{
 //     orderButton.addEventListener('click', onPrzeliczycClick)
@@ -87,14 +122,6 @@ closeButtonX.forEach((orderButton) =>{
 //     }) 
 // });
 
-window.addEventListener('keydown',(event)=>{
-    if(event.key ==='Escape'){
-        modalElement.classList.remove('shown');
-        modalElementKoszt.classList.remove('shown');
-        modalDziekuje.classList.remove('shown');
-        modalPrzyblizonyKoszt.classList.remove('shown');
-    }
-});
 
 
 
@@ -122,20 +149,22 @@ window.addEventListener('keydown',(event)=>{
     // },
 
 //   });
-
-const swiper = new Swiper('.swiper', {
-    slidesPerView: 1.3, 
-    centeredSlides: true,
-    loop: true,
-    // spaceBetween: 400,
-    pagination: {
-          el: '.swiper-pagination',
-          type:'fraction',
+if(orderSwiper){
+    const swiper = new Swiper('.swiper', {
+        slidesPerView: 1.3, 
+        centeredSlides: true,
+        loop: true,
+        // spaceBetween: 400,
+        pagination: {
+              el: '.swiper-pagination',
+              type:'fraction',
+            },
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
         },
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
-    
-  });
+        
+      });
+}
+
 

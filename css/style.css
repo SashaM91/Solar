@@ -1188,6 +1188,7 @@ ul {
     height:52px;
     margin-bottom: 40px;
     box-sizing: border-box; 
+    padding-left: 24px;
 }
 .modal-oddzwon-form-input:hover{
     border: 1px solid #FF7129 !important;
@@ -1203,8 +1204,8 @@ ul {
 }
 .modal-oddzwon-form-input::placeholder{
     color: #7B7E85;
-    padding-left: 24px;
 }
+
 .callback{
     -webkit-text-stroke: 1px #20242D;
     font-size: 95px;

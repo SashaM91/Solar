@@ -13,7 +13,6 @@ const orderWyslacProsbe = document.querySelector('.obliczyc-koszt.zl40000');
 const orderButtonsBlack = document.querySelector('.przeliczyc');
 const orderSwiper = document.querySelector('.swiper');
 const orderLastButton = document.querySelector('.action-button.ok.przeliczyc');
-const formElements = document.querySelectorAll('.modal');
 
 const openFirstTab = () => { 
     modalElement.classList.add('shown'); 
@@ -37,16 +36,27 @@ const onCloseClick = () => {
     modalDziekuje.classList.remove('shown'); 
 }; 
 
+const closeModal = event =>{
+    const target = event.target;
 
-formElements.forEach((el) => { 
-    el.addEventListener("click", (e) => { 
-        e.stopPropagation(); 
-    }) 
-});
+if(target === modalElement  || target === modalElementKoszt  || target === modalDziekuje  || target === modalPrzyblizonyKoszt){
+    modalElement.classList.remove('shown');
+    modalElementKoszt.classList.remove('shown');
+    modalPrzyblizonyKoszt.classList.remove('shown');
+    modalDziekuje.classList.remove('shown');
+}
+};
 
-
-
-
+modalElement.addEventListener('click',closeModal);
+if(modalElementKoszt){
+modalElementKoszt.addEventListener('click',closeModal);
+}
+if(modalDziekuje){
+    modalDziekuje.addEventListener('click',closeModal);
+}
+if(modalPrzyblizonyKoszt){
+    modalPrzyblizonyKoszt.addEventListener('click',closeModal);
+}
 
 orderButtons.addEventListener('click', openFirstTab); 
 if(orderButtonsKoszt){

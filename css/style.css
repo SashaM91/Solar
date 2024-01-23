@@ -1205,7 +1205,9 @@ ul {
 .modal-oddzwon-form-input::placeholder{
     color: #7B7E85;
 }
-
+.input-40000zl{
+    width: 290px !important;
+}
 .callback{
     -webkit-text-stroke: 1px #20242D;
     font-size: 95px;

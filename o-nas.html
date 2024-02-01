@@ -110,24 +110,26 @@
             </div>
             <div class="modal-oddzwon"> 
                 <form class="modal"> 
-                    <div class="close-modal"></div>
-                  <h2 class="h2-modal">Oddzwoń</h2> 
-                  <div class="div-modal-text">
-                    <p >Zostaw swoje dane, a nasz menedżer skontaktuje się z Tobą,
-                         aby odpowiedzieć na Twoje pytania.
-                    </p>
-                  </div> 
-                <div class="imie-telefon">
-                  <label for="energii elektrycznej" class="label-oddzwon"><span class="label-oddzwon-span">Twoje imię</span>
-                    <input type="text" name="Twoje imię" id="Twoje imię" class="modal-oddzwon-form-input" placeholder="Wprowadź swoje imię"> 
-                  </label>                       
-                  <label for="Telefon" class="label-oddzwon"><span  class="label-oddzwon-span">Telefon</span>
-                    <input type="text" name="Telefon" id="Telefon" class="modal-oddzwon-form-input" placeholder="Wprowadź telefon"> 
-                  </label>   
-                </div>                  
-                  <button type="submit" class="action-button-oddzwon">Zadzwoń</button> 
+                    <div class="close"> 
+                        <button type="button" class="close-modal">close</button>
+                    </div> 
+                    <h2 class="h2-modal">Oddzwoń</h2> 
+                    <div class="div-modal-text">
+                        <p >Zostaw swoje dane, a nasz menedżer skontaktuje się z Tobą,
+                            aby odpowiedzieć na Twoje pytania.
+                        </p>
+                    </div> 
+                    <div class="imie-telefon">
+                    <label for="energii elektrycznej" class="label-oddzwon"><span class="label-oddzwon-span">Twoje imię</span>
+                        <input type="text"  name="Twoje imię" id="Twoje imię" class="modal-oddzwon-form-input" required placeholder="Wprowadź swoje imię"> 
+                    </label>                       
+                    <label for="Telefon" class="label-oddzwon"><span  class="label-oddzwon-span">Telefon</span>
+                        <input type="text" name="Telefon" id="Telefon" class="modal-oddzwon-form-input" required placeholder="Wprowadź telefon"> 
+                    </label>   
+                    </div>                  
+                    <button type="submit" class="action-button-oddzwon">Zadzwoń</button> 
                 </form> 
-            </div>      
+            </div> 
             <script src="js/script.js"></script>
         </footer>
     </body>

@@ -39,51 +39,54 @@ const onCloseClick = () => {
 const closeModal = event =>{
     const target = event.target;
 
-if(target === modalElement  || target === modalElementKoszt  || target === modalDziekuje  || target === modalPrzyblizonyKoszt){
+    if  (   target === modalElement  
+    || target === modalElementKoszt  
+    || target === modalDziekuje  
+    || target === modalPrzyblizonyKoszt){
     modalElement.classList.remove('shown');
     modalElementKoszt.classList.remove('shown');
     modalPrzyblizonyKoszt.classList.remove('shown');
     modalDziekuje.classList.remove('shown');
-}
+    }
 };
 
 modalElement.addEventListener('click',closeModal);
-if(modalElementKoszt){
+    if  (  modalElementKoszt  ){
 modalElementKoszt.addEventListener('click',closeModal);
 }
-if(modalDziekuje){
+    if  (   modalDziekuje  ){
     modalDziekuje.addEventListener('click',closeModal);
 }
-if(modalPrzyblizonyKoszt){
+    if  (   modalPrzyblizonyKoszt   ){
     modalPrzyblizonyKoszt.addEventListener('click',closeModal);
 }
 
 orderButtons.addEventListener('click', openFirstTab); 
-if(orderButtonsKoszt){
+    if  (   orderButtonsKoszt   ) {
     orderButtonsKoszt.addEventListener('click', openSecondTab); 
 }
-if(orderButtonObliczyc){
+    if  (   orderButtonObliczyc ){
     orderButtonObliczyc.addEventListener('click', openThirdTab); 
 }
-if(orderWyslacProsbe){
+    if  (   orderWyslacProsbe   ){
     orderWyslacProsbe.addEventListener('click', openFourthTab); 
 }
-if(orderButtonsBlack){
+    if  (   orderButtonsBlack   ){
     orderButtonsBlack.addEventListener('click',openSecondTab);
 }
-if(orderLastButton){
+    if  (   orderLastButton   )   {
     orderLastButton.addEventListener('click',onCloseClick)
 }
 
 
-closeButton.forEach((orderButton) =>{ 
+closeButton.forEach((   orderButton   ) =>{ 
     orderButton.addEventListener('click', onCloseClick); 
 });
-closeButtonX.forEach((orderButton) =>{ 
+closeButtonX.forEach((   orderButton   ) =>{ 
     orderButton.addEventListener('click', onCloseClick); 
 });
 
-window.addEventListener('keydown',(event)=>{
+window.addEventListener(  'keydown',(event)=>{
     if(event.key ==='Escape'){
         modalElement.classList.remove('shown');
         modalElementKoszt.classList.remove('shown');
@@ -93,73 +96,7 @@ window.addEventListener('keydown',(event)=>{
 });
 
 
-// const onClickPrzyblizonyKoszt = () =>{
-//     modalElementKoszt.classList.remove('shown');
-//     modalPrzyblizonyKoszt.classList.add('shown');
-// }
-// const onCloseClickX = () =>{
-//     modalPrzyblizonyKoszt.classList.remove('shown');
-//     modalDziekuje.classList.remove('shown'); 
-// }
-
-// const onPrzeliczycClick =() =>{
-//     modalPrzyblizonyKoszt.classList.remove('shown');
-//     modalElementKoszt.classList.add('shown'); 
-// }
-
-
-
-// orderButtonObliczyc.forEach((orderButton) =>{ 
-//     orderButton.addEventListener('click', onClickPrzyblizonyKoszt); 
-// });
-// closeButton.forEach((orderButton) =>{ 
-//     orderButton.addEventListener('click', onCloseClick); 
-// });
-
-// orderWyslacProsbe.forEach((orderButton) =>{ 
-//     orderButton.addEventListener('click', onClickDziekuje); 
-// });
-
-
-
-// orderButtonsBlack.forEach((orderButton) =>{
-//     orderButton.addEventListener('click', onPrzeliczycClick)
-// });
-
-// formElements.forEach((el) => { 
-//     el.addEventListener("click", (event) => { 
-//         e.stopPropagation(); 
-//     }) 
-// });
-
-
-
-
-// const swiper = new Swiper('.swiper', {
-//     // Optional parameters
-//     effect:'coverflow',
-//     centeredSlides: true,
-//     direction: 'horizontal',
-//     loop: true,
-   
-//     scrollbar: {
-//       el: '.swiper-scrollbar',
-//     },
-//     coverflowEffect: {
-// 			rotate: 0,
-// 			stretch: 0,
-// 			depth: 0,
-// 			modifier: 3, // 2,3
-// 			slideShadows : false,
-// 		},
-//     spaceBetween: 50,
-    // pagination: {
-    //   el: '.swiper-pagination',
-    //   type:'fraction',
-    // },
-
-//   });
-if(orderSwiper){
+if ( orderSwiper ){
     const swiper = new Swiper('.swiper', {
         slidesPerView: 1.3, 
         centeredSlides: true,

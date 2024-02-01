@@ -835,6 +835,8 @@ ul {
     margin-top: 24px;
     margin-bottom: 24px;
     padding-left: 57px;
+    padding-top: 8px;
+    padding-bottom: 8px;
     position: relative;
     z-index: 5;
 }
@@ -954,6 +956,7 @@ ul {
   border: none;
   margin-top: 16px;
   margin-right: 5px;
+  text-indent: -9999px;
 }
 .close-modal:hover{
     background-image: url('../img/close-yellow.svg'); 
@@ -1193,15 +1196,18 @@ ul {
 .modal-oddzwon-form-input:hover{
     border: 1px solid #FF7129 !important;
 }
+.modal-oddzwon-form-input:default{
+    border: 1px solid #E0E0E0 !important;
+}
 .modal-oddzwon-form-input:focus{
     border: 1px solid #FF7129 !important;
     outline: none;
 }
-.modal-oddzwon-form-input:invalid{
-    border: none !important;
-    outline: 2px solid red !important;
-    border-radius: 5px !important;
-}
+
+/* .modal-oddzwon-form-input:invalid {
+    border: 2px solid red ;
+    border-radius: 5px ;
+}  */
 .modal-oddzwon-form-input::placeholder{
     color: #7B7E85;
 }

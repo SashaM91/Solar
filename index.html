@@ -115,31 +115,31 @@
             </div>
             <div class="modal-oddzwon"> 
                 <form class="modal"> 
-                  <div class="close"> 
-                    <button type="button" class="close-modal"></button>
-                  </div> 
-                  <h2 class="h2-modal">Oddzwoń</h2> 
-                  <div class="div-modal-text">
-                    <p >Zostaw swoje dane, a nasz menedżer skontaktuje się z Tobą,
-                         aby odpowiedzieć na Twoje pytania.
-                    </p>
-                  </div> 
-                <div class="imie-telefon">
-                  <label for="energii elektrycznej" class="label-oddzwon"><span class="label-oddzwon-span">Twoje imię</span>
-                    <input type="text" name="Twoje imię" id="Twoje imię" class="modal-oddzwon-form-input" placeholder="Wprowadź swoje imię"> 
-                  </label>                       
-                  <label for="Telefon" class="label-oddzwon"><span  class="label-oddzwon-span">Telefon</span>
-                    <input type="text" name="Telefon" id="Telefon" class="modal-oddzwon-form-input" placeholder="Wprowadź telefon"> 
-                  </label>   
-                </div>                  
-                  <button type="submit" class="action-button-oddzwon">Zadzwoń</button> 
+                    <div class="close"> 
+                        <button type="button" class="close-modal">close</button>
+                    </div> 
+                    <h2 class="h2-modal">Oddzwoń</h2> 
+                    <div class="div-modal-text">
+                        <p >Zostaw swoje dane, a nasz menedżer skontaktuje się z Tobą,
+                            aby odpowiedzieć na Twoje pytania.
+                        </p>
+                    </div> 
+                    <div class="imie-telefon">
+                    <label for="energii elektrycznej" class="label-oddzwon"><span class="label-oddzwon-span">Twoje imię</span>
+                        <input type="text"  name="Twoje imię" id="Twoje imię" class="modal-oddzwon-form-input" required placeholder="Wprowadź swoje imię"> 
+                    </label>                       
+                    <label for="Telefon" class="label-oddzwon"><span  class="label-oddzwon-span">Telefon</span>
+                        <input type="text" name="Telefon" id="Telefon" class="modal-oddzwon-form-input" required placeholder="Wprowadź telefon"> 
+                    </label>   
+                    </div>                  
+                    <button type="submit" class="action-button-oddzwon">Zadzwoń</button> 
                 </form> 
             </div> 
 
             <div class="modal-obliczyc-koszt"> 
                 <form class="modal"> 
                     <div class="close"> 
-                        <button type="button" class="close-modal"></button>
+                        <button type="button" class="close-modal">close</button>
                     </div>
                     
                     <h2 class="h2-modal">Obliczyć koszt</h2> 
@@ -151,8 +151,8 @@
                         <span class="roczne-zuzycie">Roczne zużycie energii elektrycznej</span>
                         <span class="nav-link">42 200 kWh</span>
                     </div>
-                        <div class="range">
-                            <input type="range" class="range" value="0" min="0" max="100">
+                    <div class="range">
+                            <input type="range" required class="range" value="0" min="0" max="100">
                             <div class="fill"></div>
                         </div>
                         <div class="obliczyc-koszt-list">
@@ -160,7 +160,7 @@
                                 <label for="Strona swiata" class="label-oddzwon1">
                                     Strona świata
                                 </label>      
-                                    <select name="" id="" class="modal-oddzwon-form-input select-css"> 
+                                    <select  required  name="" id="" class="modal-oddzwon-form-input select-css"> 
                                         <option value="" disabled selected>Wybierz z listy</option> 
                                         <option value="Południowy">Południowy</option> 
                                         <option value="Wschodni">Wschodni</option> 
@@ -172,7 +172,7 @@
                                     Materiał dachu
                                 </label> 
                                      
-                                    <select name="" id="" class="modal-oddzwon-form-input"> 
+                                    <select required name="" id="" class="modal-oddzwon-form-input"> 
                                         <option value="" disabled selected>Wybierz z listy</option> 
                                         <option value="Południowy">Dachówka</option> 
                                         <option value="Wschodni">Łupek</option> 
@@ -181,7 +181,7 @@
                             </div>  
                         </div>  
                         <div class="margin-button">
-                        <button type="button" class="obliczyc-koszt">Obliczyć</button>
+                        <button type="submit" class="obliczyc-koszt">Obliczyć</button>
                         </div>  
                     </div>    
                 </form>  
@@ -190,7 +190,7 @@
                 <form class="modal jakies-pytania"> 
                     <div class="koszt">
                         <div class="close"> 
-                            <button type="button" class="close-modal close-white"></button>
+                            <button type="button" class="close-modal close-white">close</button>
                         </div>
                         <div class="price-zl">
                             <div>
@@ -210,20 +210,21 @@
                                 <form class="form">
                                     <div>
                                         <label for="energii elektrycznej" class="label-oddzwon"><span class="label-oddzwon-span">Twoje imię</span>
-                                        <input type="text" name="Twoje imię" id="Twoje imię" class="modal-oddzwon-form-input input-40000zl" placeholder="Wprowadź swoje imię"> 
+                                        <input required type="text" name="Twoje imię" id="Twoje imię" class="modal-oddzwon-form-input input-40000zl" placeholder="Wprowadź swoje imię"> 
                                         </label>                       
                                         <label for="Telefon" class="label-oddzwon"><span  class="label-oddzwon-span">Telefon</span>
-                                        <input type="text" name="Telefon" id="Telefon" class="modal-oddzwon-form-input input-40000zl" placeholder="Wprowadź telefon"> 
+                                        <input  required type="text" name="Telefon" id="Telefon" class="modal-oddzwon-form-input input-40000zl" placeholder="Wprowadź telefon"> 
                                         </label>
                                     </div>   
                                     <label for="e-mail" class="label-oddzwon"><span  class="label-oddzwon-span">E-mail</span>
-                                        <input type="text" name="E-mail" id="E-mail" class="modal-oddzwon-form-input input-40000zl" placeholder="Wprowadź e-mail"> 
+                                        <input required type="text" name="E-mail" id="E-mail" class="modal-oddzwon-form-input input-40000zl" placeholder="Wprowadź e-mail"> 
                                     </label> 
-                                </form>                   
-                            </div>  
-                            <div class="margin-button">
-                                <button type="button" class="obliczyc-koszt zl40000">Wysłać prośbę</button>
-                            </div>  
+                                                 
+                                    </div>  
+                                    <div class="margin-button">
+                                        <button type="submit" class="obliczyc-koszt zl40000">Wysłać prośbę</button>
+                                    </div> 
+                                </form>  
                         </div>   
                     </div>     
                 </form>  
@@ -232,7 +233,7 @@
             <div class="modal-Dziekuje-za-twoja-prosbe">
                 <form class="modal Dziekuje-za-twoja-prosbe"> 
                     <div class="close"> 
-                        <button type="button" class="close-modal close-white"></button>
+                        <button type="button" class="close-modal close-white">close</button>
                     </div>
                     <div class="check_mark"> 
                     </div>
